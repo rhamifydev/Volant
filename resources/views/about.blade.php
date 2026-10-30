@@ -63,10 +63,12 @@
         <div class="glass-panel p-8 sm:p-10 rounded-2xl border border-cyan-500/30">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                 <div class="md:col-span-4 flex flex-col items-center text-center space-y-3">
-                    <div class="w-28 h-28 rounded-2xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[2px] shadow-xl shadow-cyan-950/50">
-                        <div class="w-full h-full bg-slate-900 rounded-[14px] flex items-center justify-center text-3xl font-bold text-cyan-400 font-mono">
-                            AE
-                        </div>
+                    <div class="w-32 h-32 rounded-2xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[2px] shadow-xl shadow-cyan-950/50 overflow-hidden">
+                        <img src="{{ asset('prof.Dr.AhmedEbada.jpg') }}" 
+                             alt="Prof. Dr. Ahmed Ebada, Founder of HOPn" 
+                             width="128" 
+                             height="128" 
+                             class="w-full h-full object-cover rounded-[14px]">
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-white">Prof. Dr. Ahmed Ebada</h3>
