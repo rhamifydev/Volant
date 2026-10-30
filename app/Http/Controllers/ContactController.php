@@ -22,41 +22,31 @@ class ContactController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
-        // 1. Honeypot check: reject bots that populate the hidden honeypot field
-        if (! empty($request->input('hp_website'))) {
-            // Silently redirect with success to fool automated scrapers without polluting the database
+        // 1. Honeypot check: Naive automated scrapers populate hidden honeypot fields
+        // We use a dedicated anti-spam token field that humans and autofill never populate
+        if ($request->filled('_bot_catch') && $request->input('_bot_catch') !== '') {
+            // Silently redirect automated spam bots without persisting
             return redirect()
                 ->route('contact.create')
-                ->with('success', 'Thank you! Your message has been received.');
+                ->with('success', 'Thank you! Your inquiry has been received.');
         }
 
-        // 2. Form submission timing check (anti-bot)
-        if ($timestamp = $request->input('form_token_time')) {
-            $submittedAt = (int) base64_decode($timestamp);
-            if ($submittedAt > 0 && (time() - $submittedAt) < 1) {
-                // Submitted in less than 1 second - likely automated bot script
-                return redirect()
-                    ->route('contact.create')
-                    ->with('success', 'Thank you! Your message has been received.');
-            }
-        }
-
-        // 3. Strict server-side validation
+        // 2. Server-side validation with clear, friendly messages
         $validated = $request->validate([
-            'name' => ['required', 'string', 'min:2', 'max:100'],
+            'name' => ['required', 'string', 'max:150'],
             'email' => ['required', 'string', 'email', 'max:255'],
-            'company' => ['required', 'string', 'min:2', 'max:120'],
-            'message' => ['required', 'string', 'min:10', 'max:3000'],
+            'company' => ['required', 'string', 'max:150'],
+            'message' => ['required', 'string', 'min:2', 'max:5000'],
         ], [
             'name.required' => 'Please enter your name.',
-            'email.required' => 'A valid business or work email address is required.',
-            'email.email' => 'Please provide a valid email address.',
-            'company.required' => 'Please specify your company or organization.',
-            'message.required' => 'Please provide a brief message explaining your use case.',
-            'message.min' => 'Your message should be at least 10 characters long.',
+            'email.required' => 'A valid work email is required.',
+            'email.email' => 'Please provide a valid email format.',
+            'company.required' => 'Please provide your company or institution name.',
+            'message.required' => 'Please include a message regarding your inquiry.',
+            'message.min' => 'Please provide at least a short message.',
         ]);
 
-        // 4. Persistence into SQLite / database
+        // 3. Persist cleanly to the database
         Contact::create([
             'name' => strip_tags(trim($validated['name'])),
             'email' => strtolower(trim($validated['email'])),
@@ -68,6 +58,6 @@ class ContactController extends Controller
 
         return redirect()
             ->route('contact.create')
-            ->with('success', 'Thank you for reaching out to HOPn! Our Munich engineering team will review your requirements and respond promptly.');
+            ->with('success', 'Thank you for reaching out! Your inquiry has been received and saved successfully.');
     }
 }

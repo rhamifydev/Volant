@@ -94,8 +94,7 @@ class VolantSiteTest extends TestCase
             'email' => 'alex@aerorobotics.de',
             'company' => 'AeroRobotics Labs Munich',
             'message' => 'We are integrating autonomous drones and need pre-motion safety barrier verification.',
-            'form_token_time' => base64_encode(time() - 10),
-            'hp_website' => '',
+            '_bot_catch' => '',
         ];
 
         $response = $this->post('/contact', $payload);
@@ -118,7 +117,7 @@ class VolantSiteTest extends TestCase
             'email' => 'spambot@spamdomain.com',
             'company' => 'Spam Co',
             'message' => 'Buy cheap links now http://spamsite.xyz',
-            'hp_website' => 'http://spamlink.com', // Filled honeypot
+            '_bot_catch' => 'http://spamlink.com', // Filled honeypot
         ];
 
         $response = $this->post('/contact', $botPayload);

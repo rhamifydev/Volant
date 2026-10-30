@@ -110,14 +110,11 @@
                     <form action="{{ route('contact.store') }}" method="POST" class="space-y-6" novalidate>
                         @csrf
 
-                        <!-- Anti-Spam Honeypot Field (Hidden from normal users, filled by naive bots) -->
-                        <div style="position: absolute; left: -9999px; top: -9999px; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
-                            <label for="hp_website">Do not fill this field</label>
-                            <input type="text" name="hp_website" id="hp_website" tabindex="-1" autocomplete="off" value="">
+                        <!-- Anti-Spam Honeypot Field (Hidden, autofill-proof) -->
+                        <div style="display:none !important;" aria-hidden="true">
+                            <label for="_bot_catch">Leave empty</label>
+                            <input type="text" name="_bot_catch" id="_bot_catch" tabindex="-1" autocomplete="new-password" value="">
                         </div>
-
-                        <!-- Anti-Spam Time Token -->
-                        <input type="hidden" name="form_token_time" value="{{ base64_encode(time()) }}">
 
                         <!-- Name Field -->
                         <div>
