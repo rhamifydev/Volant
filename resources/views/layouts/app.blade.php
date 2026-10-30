@@ -27,6 +27,11 @@
     <meta name="twitter:title" content="@yield('title', 'Volant — Plain Language Control for Robots and Drones')">
     <meta name="twitter:description" content="@yield('meta_description', 'Tell any robot or drone what to do in plain language. Verified before it moves.')">
 
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+    <link rel="alternate icon" href="{{ asset('volant-icon.jpg') }}">
+    <link rel="apple-touch-icon" href="{{ asset('volant-icon.jpg') }}">
+
     <!-- Theme Color for Mobile Browsers -->
     <meta name="theme-color" content="#080c14">
 
@@ -45,23 +50,13 @@
             <div class="flex items-center justify-between h-20">
                 <!-- Brand Logo -->
                 <div class="flex items-center gap-3">
-                    <a href="{{ route('home') }}" class="flex items-center gap-3 group focus:outline-none" aria-label="Volant Home">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1.5px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition duration-300">
-                            <div class="w-full h-full bg-[#080c14] rounded-[10px] flex items-center justify-center">
-                                <svg class="w-5 h-5 text-cyan-400 group-hover:scale-110 transition duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                                    <polyline points="2 17 12 22 22 17"></polyline>
-                                    <polyline points="2 12 12 17 22 12"></polyline>
-                                </svg>
-                            </div>
+                    <a href="{{ route('home') }}" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Volant Home">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1.5px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition duration-300 overflow-hidden">
+                            <img src="{{ asset('volant-icon.jpg') }}" alt="Volant Icon" width="40" height="40" class="w-full h-full object-cover rounded-[10px]">
                         </div>
-                        <div class="flex flex-col">
-                            <span class="text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
-                                Volant
-                                <span class="text-[10px] uppercase font-mono tracking-widest px-1.5 py-0.5 rounded bg-cyan-950/80 text-cyan-300 border border-cyan-800/60">HOPn</span>
-                            </span>
-                            <span class="text-[11px] text-slate-400 font-mono tracking-wider">Munich Engineering</span>
-                        </div>
+                        <span class="text-2xl font-extrabold tracking-tight text-white group-hover:text-cyan-300 transition-colors">
+                            Volant
+                        </span>
                     </a>
                 </div>
 
@@ -159,17 +154,10 @@
                 <!-- Col 1: Volant / HOPn Munich -->
                 <div class="md:col-span-2 space-y-4">
                     <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1px] flex items-center justify-center">
-                            <div class="w-full h-full bg-[#080c14] rounded-[7px] flex items-center justify-center">
-                                <svg class="w-4 h-4 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                                    <polyline points="2 17 12 22 22 17"></polyline>
-                                    <polyline points="2 12 12 17 22 12"></polyline>
-                                </svg>
-                            </div>
+                        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1px] overflow-hidden">
+                            <img src="{{ asset('volant-icon.jpg') }}" alt="Volant Icon" width="36" height="36" class="w-full h-full object-cover rounded-[7px]">
                         </div>
                         <span class="text-xl font-bold tracking-tight text-white">Volant</span>
-                        <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300 border border-slate-700">by HOPn</span>
                     </div>
                     <p class="text-sm text-slate-400 max-w-md leading-relaxed">
                         Volant is a software layer that lets operators tell robots and drones what to do in plain language, with behavior checked for safety before the machine moves.

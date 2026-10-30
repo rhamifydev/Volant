@@ -15,7 +15,7 @@
             <!-- Badge -->
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-cyan-500/30 text-xs font-mono text-cyan-300 shadow-sm shadow-cyan-950">
                 <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
-                <span>Deterministic Safety Layer by HOPn &bull; Munich</span>
+                <span>Deterministic Safety Layer for Robots &amp; Drones</span>
             </div>
 
             <!-- Headline: Exact text required by prompt -->
