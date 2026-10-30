@@ -6,13 +6,14 @@
 @section('content')
 <!-- Hero Section -->
 <section class="relative pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden bg-grid-pattern">
-    <!-- Hero Background Image with Cinematic Dark Gradient Mask -->
+    <!-- Hero Background Image with Increased Visibility -->
     <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         <img src="{{ asset('images/drone.jpg') }}" 
              alt="Volant autonomous flight background" 
              aria-hidden="true" 
-             class="w-full h-full object-cover object-center scale-105 opacity-25 sm:opacity-30 filter brightness-90">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14] via-[#080c14]/70 to-[#080c14]"></div>
+             class="w-full h-full object-cover object-center scale-100 opacity-65 sm:opacity-75 filter contrast-105">
+        <!-- Soft top and bottom vignette to blend seamlessly with header and content -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14]/80 via-[#080c14]/40 to-[#080c14]"></div>
     </div>
 
     <!-- Ambient Radial Glows -->
@@ -22,18 +23,18 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto space-y-6">
             <!-- Badge -->
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/90 border border-cyan-500/30 text-xs font-mono text-cyan-300 shadow-sm shadow-cyan-950">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-cyan-500/40 text-xs font-mono text-cyan-300 shadow-lg shadow-black/60 backdrop-blur-md">
                 <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
                 <span>Deterministic Safety Layer for Robots &amp; Drones</span>
             </div>
 
-            <!-- Headline: Exact text required by prompt -->
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            <!-- Headline: Exact text required by prompt with drop-shadow for crystal legibility -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
                 Tell any robot or drone what to do in plain language. <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">Verified before it moves.</span>
             </h1>
 
-            <!-- Subtext -->
-            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            <!-- Subtext with shadow -->
+            <p class="text-lg sm:text-xl text-slate-200 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
                 Volant bridges human intent and autonomous hardware. We translate natural language into deterministic trajectory primitives, run formal safety barrier verification, and guarantee machine integrity before a single actuator engages.
             </p>
 
