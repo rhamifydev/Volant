@@ -36,7 +36,7 @@ RUN cp -n .env.example .env || true \
 RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts --ignore-platform-req=php+
 
 # Build frontend assets
-RUN npm ci && npm run build
+RUN rm -f public/hot && npm ci --include=dev && npm run build
 
 # Expose port (Render sets $PORT dynamically)
 ENV PORT=8000
@@ -44,6 +44,7 @@ EXPOSE 8000
 
 # Entrypoint script: configure runtime environment, discover packages, run migrations, cache config, and start server
 CMD sh -c "\
+    rm -f public/hot && \
     mkdir -p /var/www/html/database /var/www/html/storage/framework/cache /var/www/html/storage/framework/sessions /var/www/html/storage/framework/views /var/www/html/storage/logs /var/www/html/bootstrap/cache && \
     touch /var/www/html/database/database.sqlite && \
     chmod -R 777 /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/database && \

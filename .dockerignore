@@ -8,3 +8,4 @@
 .vscode
 npm-debug.log
 yarn-error.log
+/public/hot
