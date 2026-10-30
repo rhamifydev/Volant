@@ -197,6 +197,65 @@
     </div>
 </section>
 
+<!-- Visual Hardware Architectures Gallery -->
+<section class="py-20 border-t border-slate-800/80 bg-slate-900/30">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+            <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">Hardware Compatibility</span>
+            <h2 class="text-3xl font-bold text-white">Deployed Across Physical Form Factors</h2>
+            <p class="text-slate-400 text-sm sm:text-base">
+                From precision joint coordination on assembly lines to dynamic airspace geofencing in uncrewed flight.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition duration-300 group">
+                <div class="h-44 overflow-hidden relative">
+                    <img src="{{ asset('images/industrial-arm.jpg') }}" alt="Industrial Robotic Arm" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                    <span class="absolute bottom-2.5 left-3 text-xs font-bold text-white">Industrial Arms</span>
+                </div>
+                <div class="p-4 text-xs text-slate-300">
+                    Deterministic inverse kinematics and singularity avoidance for 6-axis and 7-axis manipulators.
+                </div>
+            </div>
+
+            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition duration-300 group">
+                <div class="h-44 overflow-hidden relative">
+                    <img src="{{ asset('images/humanoid.jpg') }}" alt="Humanoid Robot" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                    <span class="absolute bottom-2.5 left-3 text-xs font-bold text-white">Humanoids</span>
+                </div>
+                <div class="p-4 text-xs text-slate-300">
+                    Whole-body stability and zero-moment point balance validation prior to multi-limb motion.
+                </div>
+            </div>
+
+            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition duration-300 group">
+                <div class="h-44 overflow-hidden relative">
+                    <img src="{{ asset('images/mobile-robot.jpg') }}" alt="Autonomous Mobile Robot" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                    <span class="absolute bottom-2.5 left-3 text-xs font-bold text-white">Mobile Robots (AMR)</span>
+                </div>
+                <div class="p-4 text-xs text-slate-300">
+                    Dynamic deceleration braking envelopes and obstacle clearance for warehouse fleets.
+                </div>
+            </div>
+
+            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition duration-300 group">
+                <div class="h-44 overflow-hidden relative">
+                    <img src="{{ asset('images/drone.jpg') }}" alt="Autonomous Drone UAV" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+                    <span class="absolute bottom-2.5 left-3 text-xs font-bold text-white">Drones (UAV)</span>
+                </div>
+                <div class="p-4 text-xs text-slate-300">
+                    3D convex airspace envelope enforcement, battery return reserves, and active geofencing.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Comparison Table: Why Verification Matters -->
 <section class="py-20 bg-slate-950/60 border-t border-slate-800/80">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

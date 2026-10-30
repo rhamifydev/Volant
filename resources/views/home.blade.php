@@ -241,144 +241,176 @@
 
         <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- 1. Industrial Arms -->
-            <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition duration-300 flex flex-col justify-between">
+            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-cyan-950/80 border border-cyan-800 flex items-center justify-center text-cyan-400 mb-6">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                        </svg>
+                    <div class="relative w-full h-52 sm:h-64 overflow-hidden">
+                        <img src="{{ asset('images/industrial-arm.jpg') }}" 
+                             alt="Precision 6-Axis Industrial Robotic Arm" 
+                             width="800" 
+                             height="450" 
+                             loading="lazy" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-cyan-300 border border-cyan-800/60 backdrop-blur-md">
+                            Kinematic Safety
+                        </span>
                     </div>
-                    <div class="flex items-center gap-2 mb-2">
-                        <h3 class="text-2xl font-bold text-white">Industrial Arms</h3>
-                        <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-300">Kinematic Safety</span>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center gap-2 mb-2">
+                            <h3 class="text-2xl font-bold text-white">Industrial Arms</h3>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            From heavy-payload assembly manipulators to precision cobots on shop floors. Volant translates operator directives into Cartesian and joint trajectories while enforcing singularity buffers, maximum payload torque, and work-cell safety zones.
+                        </p>
+                        <ul class="space-y-2 text-xs font-mono text-slate-400">
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span>Cartesian collision boundary enforcement</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span>Payload mass and torque barrier validation</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span>Singularity and joint acceleration clamp</span>
+                            </li>
+                        </ul>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                        From heavy-payload assembly manipulators to precision cobots on shop floors. Volant translates operator directives into Cartesian and joint trajectories while enforcing singularity buffers, maximum payload torque, and work-cell safety zones.
-                    </p>
-                    <ul class="space-y-2 text-xs font-mono text-slate-400">
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
-                            <span>Cartesian collision boundary enforcement</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
-                            <span>Payload mass and torque barrier validation</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
-                            <span>Singularity and joint acceleration clamp</span>
-                        </li>
-                    </ul>
                 </div>
-                <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800/80 pt-4">
                     <span>Use Case: Precision Assembly &amp; Handling</span>
                     <a href="{{ route('product') }}" class="text-cyan-400 hover:text-cyan-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
                 </div>
             </div>
 
             <!-- 2. Humanoids -->
-            <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition duration-300 flex flex-col justify-between">
+            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-emerald-950/80 border border-emerald-800 flex items-center justify-center text-emerald-400 mb-6">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
+                    <div class="relative w-full h-52 sm:h-64 overflow-hidden">
+                        <img src="{{ asset('images/humanoid.jpg') }}" 
+                             alt="Bipedal Humanoid Robot in Munich Research Lab" 
+                             width="800" 
+                             height="450" 
+                             loading="lazy" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-emerald-300 border border-emerald-800/60 backdrop-blur-md">
+                            Balance &amp; Whole-Body
+                        </span>
                     </div>
-                    <div class="flex items-center gap-2 mb-2">
-                        <h3 class="text-2xl font-bold text-white">Humanoids</h3>
-                        <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-emerald-300">Balance &amp; Whole-Body</span>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center gap-2 mb-2">
+                            <h3 class="text-2xl font-bold text-white">Humanoids</h3>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Bipedal locomotion and multi-limb manipulation demand rigorous stability guarantees. Volant simulates zero-moment point dynamics, center-of-mass balance, and multi-contact points before permitting whole-body movement.
+                        </p>
+                        <ul class="space-y-2 text-xs font-mono text-slate-400">
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span>Whole-body dynamic balance (ZMP) check</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span>Multi-limb contact wrench validation</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span>Self-collision avoidance between limbs</span>
+                            </li>
+                        </ul>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                        Bipedal locomotion and multi-limb manipulation demand rigorous stability guarantees. Volant simulates zero-moment point dynamics, center-of-mass balance, and multi-contact points before permitting whole-body movement.
-                    </p>
-                    <ul class="space-y-2 text-xs font-mono text-slate-400">
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
-                            <span>Whole-body dynamic balance (ZMP) check</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
-                            <span>Multi-limb contact wrench validation</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
-                            <span>Self-collision avoidance between limbs</span>
-                        </li>
-                    </ul>
                 </div>
-                <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800/80 pt-4">
                     <span>Use Case: Agile Complex Tasks &amp; Service</span>
                     <a href="{{ route('product') }}" class="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
                 </div>
             </div>
 
             <!-- 3. Mobile Robots -->
-            <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition duration-300 flex flex-col justify-between">
+            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-cyan-950/80 border border-cyan-800 flex items-center justify-center text-cyan-400 mb-6">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
-                        </svg>
+                    <div class="relative w-full h-52 sm:h-64 overflow-hidden">
+                        <img src="{{ asset('images/mobile-robot.jpg') }}" 
+                             alt="Autonomous Mobile Robot (AMR) in Warehouse" 
+                             width="800" 
+                             height="450" 
+                             loading="lazy" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-cyan-300 border border-cyan-800/60 backdrop-blur-md">
+                            Navigation Bounds
+                        </span>
                     </div>
-                    <div class="flex items-center gap-2 mb-2">
-                        <h3 class="text-2xl font-bold text-white">Mobile Robots (AMRs)</h3>
-                        <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-cyan-300">Navigation Bounds</span>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center gap-2 mb-2">
+                            <h3 class="text-2xl font-bold text-white">Mobile Robots (AMRs)</h3>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Autonomous mobile robots and AGVs navigating warehouses or outdoor yards. Plain-text route directions are mathematically verified against dynamic costmaps, pedestrian buffers, stopping distances, and payload limits.
+                        </p>
+                        <ul class="space-y-2 text-xs font-mono text-slate-400">
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span>Dynamic obstacle braking distance calculations</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span>Restricted operational corridor geofencing</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span>Payload stability under lateral turning forces</span>
+                            </li>
+                        </ul>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                        Autonomous mobile robots and AGVs navigating warehouses or outdoor yards. Plain-text route directions are mathematically verified against dynamic costmaps, pedestrian buffers, stopping distances, and payload limits.
-                    </p>
-                    <ul class="space-y-2 text-xs font-mono text-slate-400">
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
-                            <span>Dynamic obstacle braking distance calculations</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
-                            <span>Restricted operational corridor geofencing</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
-                            <span>Payload stability under lateral turning forces</span>
-                        </li>
-                    </ul>
                 </div>
-                <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800/80 pt-4">
                     <span>Use Case: Warehouse Logistics &amp; Transport</span>
                     <a href="{{ route('product') }}" class="text-cyan-400 hover:text-cyan-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
                 </div>
             </div>
 
             <!-- 4. Drones -->
-            <div class="glass-panel p-8 rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition duration-300 flex flex-col justify-between">
+            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
                 <div>
-                    <div class="w-12 h-12 rounded-xl bg-emerald-950/80 border border-emerald-800 flex items-center justify-center text-emerald-400 mb-6">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
+                    <div class="relative w-full h-52 sm:h-64 overflow-hidden">
+                        <img src="{{ asset('images/drone.jpg') }}" 
+                             alt="Autonomous Inspection Drone with Geofence Barrier" 
+                             width="800" 
+                             height="450" 
+                             loading="lazy" 
+                             class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-emerald-300 border border-emerald-800/60 backdrop-blur-md">
+                            Airspace Safety
+                        </span>
                     </div>
-                    <div class="flex items-center gap-2 mb-2">
-                        <h3 class="text-2xl font-bold text-white">Drones (UAVs)</h3>
-                        <span class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-emerald-300">Airspace Safety</span>
+                    <div class="p-6 sm:p-8">
+                        <div class="flex items-center gap-2 mb-2">
+                            <h3 class="text-2xl font-bold text-white">Drones (UAVs)</h3>
+                        </div>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Uncrewed aerial vehicles for perimeter surveillance, infrastructure inspection, and delivery. Natural flight commands are validated against 3D airspace geofences, altitude ceilings, return-to-land battery reserves, and no-fly zones.
+                        </p>
+                        <ul class="space-y-2 text-xs font-mono text-slate-400">
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span>3D convex airspace envelope enforcement</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span>Energy-aware return-to-home battery threshold</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span>No-fly zone and altitude ceiling checks</span>
+                            </li>
+                        </ul>
                     </div>
-                    <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                        Uncrewed aerial vehicles for perimeter surveillance, infrastructure inspection, and delivery. Natural flight commands are validated against 3D airspace geofences, altitude ceilings, return-to-land battery reserves, and no-fly zones.
-                    </p>
-                    <ul class="space-y-2 text-xs font-mono text-slate-400">
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
-                            <span>3D convex airspace envelope enforcement</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
-                            <span>Energy-aware return-to-home battery threshold</span>
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
-                            <span>No-fly zone and altitude ceiling checks</span>
-                        </li>
-                    </ul>
                 </div>
-                <div class="mt-8 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+                <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800/80 pt-4">
                     <span>Use Case: Aerial Inspection &amp; Monitoring</span>
                     <a href="{{ route('product') }}" class="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
                 </div>
