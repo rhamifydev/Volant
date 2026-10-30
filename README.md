@@ -10,12 +10,14 @@ This repository houses the complete marketing, product, and architecture website
 
 ## 🌐 Live Demo & Hosting Information
 
-- **Live URL**: `[INSERT_YOUR_RENDER_URL_HERE]` (e.g. `https://volant-hopn.onrender.com`)
-- **Hosting Platform**: **Render** (Free Web Service tier, Frankfurt region)
-- **Database**: SQLite (or PostgreSQL on Render)
+- **Live Website:** [https://volant.onrender.com](https://volant.onrender.com)
+- **GitHub Repository:** [https://github.com/rhamifydev/Volant](https://github.com/rhamifydev/Volant)
+- **Hosting Platform:** **Render** (Free Web Service tier)
+- **Region:** Virginia (US East)
+- **Database:** SQLite (`/var/www/html/database/database.sqlite`)
 
-> ⚠️ **Note on Free Hosting Cold Starts:**  
-> Render's free tier automatically spins down containers after 15 minutes of inactivity to preserve compute resources. If visiting for the first time in a while, the initial page load may take **30–50 seconds** while the container boots. Subsequent navigations will be instantaneous.
+> ⚠️ **Note on Free Hosting Inactivity / Cold Starts:**  
+> Render's free tier puts the web service to sleep after **15 minutes of inactivity** to preserve resources. If visiting after a period of dormancy, the first visit may take **30–50 seconds** while the container spins up and runs migrations. Subsequent page loads and navigations are instantaneous.
 
 ---
 

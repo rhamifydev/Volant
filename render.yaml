@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: volant-hopn
+    name: volant
     env: docker
     plan: free
-    region: frankfurt
+    region: virginia
     autoDeploy: true
     envVars:
       - key: APP_NAME
