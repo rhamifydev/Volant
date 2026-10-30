@@ -1,0 +1,10 @@
+/node_modules
+/vendor
+/storage/*.key
+.env
+.git
+.github
+.idea
+.vscode
+npm-debug.log
+yarn-error.log
