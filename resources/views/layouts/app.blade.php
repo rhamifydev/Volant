@@ -32,6 +32,11 @@
     <link rel="alternate icon" href="{{ asset('volant-icon.jpg') }}">
     <link rel="apple-touch-icon" href="{{ asset('volant-icon.jpg') }}">
 
+    <!-- Google Fonts: Lobster -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
     <!-- Theme Color for Mobile Browsers -->
     <meta name="theme-color" content="#080c14">
 
