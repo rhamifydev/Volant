@@ -127,4 +127,39 @@ class VolantSiteTest extends TestCase
         // Must NOT save to database
         $this->assertDatabaseCount('contacts', 0);
     }
+
+    public function test_admin_dashboard_renders_and_displays_inquiries(): void
+    {
+        Contact::create([
+            'name' => 'Dr. Claudia Meier',
+            'email' => 'claudia@tum.de',
+            'company' => 'TUM Robotics Institute',
+            'message' => 'Evaluating Volant deterministic motion compiler for bipedal humanoids.',
+        ]);
+
+        $response = $this->get('/admin');
+
+        $response->assertStatus(200);
+        $response->assertSee('Contact Inquiries');
+        $response->assertSee('Dr. Claudia Meier');
+        $response->assertSee('claudia@tum.de');
+        $response->assertSee('TUM Robotics Institute');
+    }
+
+    public function test_admin_dashboard_allows_deleting_an_inquiry(): void
+    {
+        $contact = Contact::create([
+            'name' => 'To Be Deleted',
+            'email' => 'delete@example.com',
+            'company' => 'Old Org',
+            'message' => 'This message will be removed.',
+        ]);
+
+        $this->assertDatabaseCount('contacts', 1);
+
+        $response = $this->delete("/admin/contacts/{$contact->id}");
+
+        $response->assertRedirect(route('admin.index'));
+        $this->assertDatabaseCount('contacts', 0);
+    }
 }

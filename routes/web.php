@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Route;
@@ -20,6 +21,10 @@ Route::get('/contact', [ContactController::class, 'create'])->name('contact.crea
 Route::post('/contact', [ContactController::class, 'store'])
     ->middleware(['throttle:10,1'])
     ->name('contact.store');
+
+// Admin Contact Inquiries Dashboard
+Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+Route::delete('/admin/contacts/{contact}', [AdminController::class, 'destroy'])->name('admin.contacts.destroy');
 
 Route::get('/impressum', function () {
     return view('legal.impressum');

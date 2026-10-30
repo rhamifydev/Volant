@@ -27,6 +27,7 @@ This repository houses the complete marketing, product, and architecture website
 | **Product** | `/product` | Deep dive into the 4 architectural pillars (**Describe &rarr; Compile &rarr; Verify &rarr; Deploy**), including comparison against raw LLMs and traditional manual scripting. |
 | **About** | `/about` | Overview of HOPn, Munich headquarters, and founder Prof. Dr. Ahmed Ebada. Focuses on safe, verifiable human-centric autonomy. |
 | **Contact** | `/contact` | Functional contact form with strict server-side validation, multi-layer spam defense (honeypot + timing token + rate limiting), database persistence, and flash alert states. |
+| **Admin Dashboard** | `/admin` | Clean light dashboard to view, search, and manage contact form submissions directly from the database. |
 | **Impressum** | `/impressum` | German legal notice compliant with § 5 DDG, featuring clearly marked placeholders (`[PLACEHOLDER: ...]`). |
 | **Datenschutz** | `/datenschutz` | GDPR / DSGVO privacy policy covering server logs, contact data storage, and data subject rights (Art. 15–21 DSGVO). |
 | **Sitemap & Robots** | `/sitemap.xml`, `/robots.txt` | Clean, dynamically generated XML sitemap and crawler instructions for SEO. |
