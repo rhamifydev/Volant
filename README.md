@@ -158,21 +158,6 @@ In adherence to the project guidelines:
   - Accessibility & semantics: verified heading hierarchies (`h1` through `h3`), ARIA attributes, contrast ratios, and keyboard focus states.
   - German legal requirements: verified § 5 DDG and DSGVO placeholder markings on Impressum and Datenschutz.
 
----
-
-## 📝 Written Note / Decision Rationale (5-Minute Overview)
-
-### 1. Technology Selection: Why Laravel & Blade?
-When building an application under a 24-hour turnaround where dependable cloud deployment and a working database are critical, Laravel offers unbeatable developer velocity, built-in security (CSRF, prepared SQL statements, rate limiters), and server-rendered HTML. Unlike single-page client apps that suffer from large initial JavaScript bundles or hydration shifts, server-rendered Blade templates achieve near-perfect Lighthouse performance and accessibility out of the box with zero client-side latency.
-
-### 2. Design System: Precision Dark Aerospace Aesthetic
-Robotics and autonomous drones require precision, reliability, and modern engineering rigor. We avoided generic color palettes in favor of a deep dark background (`#080c14`), electric cyan/emerald accents, and subtle grid overlays that echo CAD environments. We added an interactive terminal on the home page so prospective clients can immediately understand what "Verified before it moves" looks like in practice.
-
-### 3. Safety-First Architecture: Determinism Over Hallucination
-In robotics, probabilistic models alone cannot be permitted to command motors directly. The site clearly explains the 4-step pipeline: natural language is compiled into deterministic spline trajectories, which then hit a mathematical invariant barrier (kinematics, collision envelopes, geofences, torque thresholds). Only upon clearance is motor execution authorized.
-
-### 4. Database Strategy: SQLite for Portable Cloud Deployment
-For free cloud deployment on platforms like Render or Fly.io, configuring an external MySQL or PostgreSQL instance can introduce connection latency, credit card requirements, or setup fragility. SQLite provides zero-latency file-based storage with ACID compliance, perfectly suited for contact management.
 
 ---
 
