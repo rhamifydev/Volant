@@ -6,6 +6,15 @@
 @section('content')
 <!-- Hero Section -->
 <section class="relative pt-16 pb-24 lg:pt-24 lg:pb-32 overflow-hidden bg-grid-pattern">
+    <!-- Hero Background Image with Cinematic Dark Gradient Mask -->
+    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <img src="{{ asset('images/drone.jpg') }}" 
+             alt="Volant autonomous flight background" 
+             aria-hidden="true" 
+             class="w-full h-full object-cover object-center scale-105 opacity-25 sm:opacity-30 filter brightness-90">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14] via-[#080c14]/70 to-[#080c14]"></div>
+    </div>
+
     <!-- Ambient Radial Glows -->
     <div class="absolute inset-0 pointer-events-none glow-radial-cyan" aria-hidden="true"></div>
     <div class="absolute inset-0 pointer-events-none glow-radial-emerald" aria-hidden="true"></div>
