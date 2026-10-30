@@ -1,4 +1,4 @@
-FROM php:8.3-cli-alpine
+FROM php:8.4-cli-alpine
 
 # Install system dependencies & build tools
 RUN apk add --no-cache \
@@ -33,7 +33,7 @@ RUN cp -n .env.example .env || true \
     && chmod -R 777 /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/database
 
 # Install PHP dependencies without triggering artisan scripts during build
-RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts
+RUN composer install --no-dev --optimize-autoloader --no-interaction --no-scripts --ignore-platform-req=php+
 
 # Build frontend assets
 RUN npm ci && npm run build
