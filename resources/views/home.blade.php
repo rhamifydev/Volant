@@ -13,24 +13,24 @@
              aria-hidden="true" 
              class="w-full h-full object-cover object-center scale-100 opacity-65 sm:opacity-75 filter contrast-105">
         <!-- Soft top and bottom vignette to blend seamlessly with header and content -->
-        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14]/80 via-[#080c14]/40 to-[#080c14]"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09090b]/80 via-[#09090b]/40 to-[#09090b]"></div>
     </div>
 
     <!-- Ambient Radial Glows -->
-    <div class="absolute inset-0 pointer-events-none glow-radial-cyan" aria-hidden="true"></div>
-    <div class="absolute inset-0 pointer-events-none glow-radial-emerald" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-amber" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-gold" aria-hidden="true"></div>
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto space-y-6">
             <!-- Badge -->
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-lg shadow-black/60 backdrop-blur-md">
-                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping" aria-hidden="true"></span>
                 <span>Deterministic Safety Layer for Robots &amp; Drones</span>
             </div>
 
             <!-- Headline: Exact text required by prompt with drop-shadow for crystal legibility -->
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
-                Tell any robot or drone what to do in plain language. <span class="bg-gradient-to-r from-amber-400 via-amber-300 to-orange-400 bg-clip-text text-transparent">Verified before it moves.</span>
+                Tell any robot or drone what to do in plain language. <span class="bg-gradient-to-r from-[#F3EDE1] via-[#E5A352] to-[#C8893A] bg-clip-text text-transparent">Verified before it moves.</span>
             </h1>
 
             <!-- Subtext with shadow -->
@@ -66,7 +66,7 @@
                         <div class="flex items-center gap-1.5" aria-hidden="true">
                             <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
                             <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
-                            <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                            <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
                         </div>
                         <span class="text-xs font-mono text-slate-400 ml-2">volant-core-runtime &bull; formal-verification-engine</span>
                     </div>
@@ -110,8 +110,8 @@
                             </span>
                         </div>
                         <div class="flex items-start gap-2">
-                            <span class="text-emerald-400 font-semibold shrink-0">[3. VERIFY]</span>
-                            <span id="sim-verify" class="text-emerald-300 text-xs">
+                            <span class="text-amber-400 font-semibold shrink-0">[3. VERIFY]</span>
+                            <span id="sim-verify" class="text-amber-300 text-xs">
                                 [PASS] Collision envelope clear | Force within tolerance (&lt;15N) | Singularity margin: 18.4°
                             </span>
                         </div>
@@ -119,8 +119,8 @@
 
                     <div class="pt-2 border-t border-slate-800/80 flex items-center justify-between text-xs">
                         <div class="flex items-center gap-2">
-                            <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                            <span id="sim-status" class="text-emerald-400 font-semibold tracking-wider">
+                            <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+                            <span id="sim-status" class="text-amber-400 font-semibold tracking-wider">
                                 VERIFIED_SAFE — DISPATCHING MOTOR COMM
                             </span>
                         </div>
@@ -136,16 +136,16 @@
 </section>
 
 <!-- Autonomous Execution Video Demonstration Section -->
-<section id="live-demo" class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-[#080c14] via-slate-950/90 to-[#080c14] border-t border-slate-800/80">
+<section id="live-demo" class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-[#09090b] via-slate-950/90 to-[#09090b] border-t border-slate-800/80">
     <!-- Ambient Radial Glows -->
-    <div class="absolute inset-0 pointer-events-none glow-radial-cyan opacity-70" aria-hidden="true"></div>
-    <div class="absolute inset-0 pointer-events-none glow-radial-emerald opacity-60" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-amber opacity-70" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-gold opacity-60" aria-hidden="true"></div>
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto space-y-4 mb-12 lg:mb-16">
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-lg shadow-black/60 backdrop-blur-md">
-                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" aria-hidden="true"></span>
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse" aria-hidden="true"></span>
                 <span>Deterministic Motion In Action</span>
             </div>
             
@@ -166,10 +166,10 @@
                 <div class="bg-slate-900/90 px-4 sm:px-6 py-3 border-b border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-slate-300">
                     <div class="flex items-center gap-2.5">
                         <span class="relative flex h-2.5 w-2.5">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-amber-500"></span>
                         </span>
-                        <span class="text-emerald-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs">Live Telemetry Feed</span>
+                        <span class="text-amber-400 font-bold uppercase tracking-wider text-[11px] sm:text-xs">Live Telemetry Feed</span>
                         <span class="hidden sm:inline text-slate-600">|</span>
                         <span id="video-feed-subtitle" class="hidden sm:inline text-slate-400">Urban Airspace Geofence Patrol &amp; Real-Time Collision Avoidance (New York)</span>
                     </div>
@@ -234,7 +234,7 @@
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="text-slate-400">BOUNDING ENVELOPE:</span>
-                            <span id="hud-envelope" class="text-emerald-400 font-semibold">100% CLEAR (URBAN BUFFER &gt; 12.0m)</span>
+                            <span id="hud-envelope" class="text-amber-400 font-semibold">100% CLEAR (URBAN BUFFER &gt; 12.0m)</span>
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="text-slate-400">KINEMATIC DRIFT:</span>
@@ -243,8 +243,8 @@
                     </div>
 
                     <!-- HUD Status Badge (Top Right) -->
-                    <div class="absolute top-6 right-6 pointer-events-none hidden sm:flex items-center gap-2 px-3 py-1 rounded-md bg-slate-950/80 border border-emerald-500/40 font-mono text-xs text-emerald-300 drop-shadow-md">
-                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <div class="absolute top-6 right-6 pointer-events-none hidden sm:flex items-center gap-2 px-3 py-1 rounded-md bg-slate-950/80 border border-amber-500/40 font-mono text-xs text-amber-300 drop-shadow-md">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
                         <span id="hud-status-badge">CITY FLIGHT ENVELOPE LOCKED</span>
                     </div>
 
@@ -303,7 +303,7 @@
                         <div class="flex items-center gap-3">
                             <!-- 15s Auto Rotation Pill -->
                             <div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-900/90 border border-slate-700/80 text-[11px] font-mono text-slate-300">
-                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-ping"></span>
                                 <span>Cycle: </span>
                                 <span id="rotation-countdown" class="text-amber-300 font-bold">15s</span>
                             </div>
@@ -339,7 +339,7 @@
                             class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono transition-all bg-amber-500/20 border border-amber-400 text-amber-300 shadow-md shadow-amber-500/20 cursor-pointer"
                             aria-selected="true"
                         >
-                            <span class="w-2 h-2 rounded-full bg-cyan-400 feed-active-indicator" aria-hidden="true"></span>
+                            <span class="w-2 h-2 rounded-full bg-amber-400 feed-active-indicator" aria-hidden="true"></span>
                             <span>1. City Drone</span>
                         </button>
 
@@ -350,7 +350,7 @@
                             class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono transition-all bg-slate-800/80 border border-slate-700 text-slate-400 hover:text-slate-200 cursor-pointer"
                             aria-selected="false"
                         >
-                            <span class="w-2 h-2 rounded-full bg-cyan-400 feed-active-indicator hidden" aria-hidden="true"></span>
+                            <span class="w-2 h-2 rounded-full bg-amber-400 feed-active-indicator hidden" aria-hidden="true"></span>
                             <span>2. Industrial Arm (Soldering)</span>
                         </button>
 
@@ -361,7 +361,7 @@
                             class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono transition-all bg-slate-800/80 border border-slate-700 text-slate-400 hover:text-slate-200 cursor-pointer"
                             aria-selected="false"
                         >
-                            <span class="w-2 h-2 rounded-full bg-cyan-400 feed-active-indicator hidden" aria-hidden="true"></span>
+                            <span class="w-2 h-2 rounded-full bg-amber-400 feed-active-indicator hidden" aria-hidden="true"></span>
                             <span>3. Warehouse AMR</span>
                         </button>
 
@@ -372,7 +372,7 @@
                             class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono transition-all bg-slate-800/80 border border-slate-700 text-slate-400 hover:text-slate-200 cursor-pointer"
                             aria-selected="false"
                         >
-                            <span class="w-2 h-2 rounded-full bg-cyan-400 feed-active-indicator hidden" aria-hidden="true"></span>
+                            <span class="w-2 h-2 rounded-full bg-amber-400 feed-active-indicator hidden" aria-hidden="true"></span>
                             <span>4. Humanoids</span>
                         </button>
                     </div>
@@ -393,8 +393,8 @@
                     </p>
                 </div>
 
-                <div class="glass-panel p-5 rounded-xl border border-slate-800/80 hover:border-emerald-500/40 transition">
-                    <div class="flex items-center gap-2 text-emerald-400 font-mono text-xs mb-2">
+                <div class="glass-panel p-5 rounded-xl border border-slate-800/80 hover:border-amber-500/40 transition">
+                    <div class="flex items-center gap-2 text-amber-400 font-mono text-xs mb-2">
                         <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                         </svg>
@@ -440,7 +440,7 @@
                 <div>
                     <div class="flex items-center justify-between mb-5">
                         <span class="step-num text-2xl font-bold font-mono text-amber-400">01</span>
-                        <div class="w-10 h-10 rounded-lg bg-amber-950/80 border border-cyan-800 flex items-center justify-center text-amber-400">
+                        <div class="w-10 h-10 rounded-lg bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                             </svg>
@@ -462,7 +462,7 @@
                 <div>
                     <div class="flex items-center justify-between mb-5">
                         <span class="step-num text-2xl font-bold font-mono text-slate-400">02</span>
-                        <div class="w-10 h-10 rounded-lg bg-amber-950/80 border border-cyan-800 flex items-center justify-center text-amber-400">
+                        <div class="w-10 h-10 rounded-lg bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                             </svg>
@@ -484,7 +484,7 @@
                 <div>
                     <div class="flex items-center justify-between mb-5">
                         <span class="step-num text-2xl font-bold font-mono text-slate-400">03</span>
-                        <div class="w-10 h-10 rounded-lg bg-emerald-950/80 border border-emerald-800 flex items-center justify-center text-emerald-400">
+                        <div class="w-10 h-10 rounded-lg bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
@@ -506,7 +506,7 @@
                 <div>
                     <div class="flex items-center justify-between mb-5">
                         <span class="step-num text-2xl font-bold font-mono text-slate-400">04</span>
-                        <div class="w-10 h-10 rounded-lg bg-amber-950/80 border border-cyan-800 flex items-center justify-center text-amber-400">
+                        <div class="w-10 h-10 rounded-lg bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
@@ -568,7 +568,7 @@
             
             <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-slate-400 pt-3 border-t border-slate-800/80">
                 <span class="flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
                     <span>Deterministic Compiler: Munich Verification Node v2.4</span>
                 </span>
                 <span class="text-amber-400">Click steps 01–04 above to inspect live pipeline data &rarr;</span>
@@ -578,16 +578,16 @@
 </section>
 
 <!-- Interactive Kinematic Trajectory & Safety Envelope Sandbox -->
-<section id="interactive-simulator" class="py-24 relative overflow-hidden bg-gradient-to-b from-[#080c14] via-slate-950/95 to-[#080c14] border-b border-slate-800/80">
+<section id="interactive-simulator" class="py-24 relative overflow-hidden bg-gradient-to-b from-[#09090b] via-slate-950/95 to-[#09090b] border-b border-slate-800/80">
     <!-- Ambient Radial Glows -->
-    <div class="absolute inset-0 pointer-events-none glow-radial-cyan opacity-60" aria-hidden="true"></div>
-    <div class="absolute inset-0 pointer-events-none glow-radial-emerald opacity-50" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-amber opacity-60" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-gold opacity-50" aria-hidden="true"></div>
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-xl backdrop-blur-md">
-                <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
+                <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping" aria-hidden="true"></span>
                 <span>Interactive Verification Sandbox</span>
             </div>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
@@ -695,9 +695,9 @@
                     <div class="space-y-1.5">
                         <div class="flex justify-between text-xs font-mono">
                             <span class="text-slate-300">Safety Exclusion Buffer:</span>
-                            <span id="slider-buffer-val" class="text-emerald-300 font-bold">0.80 m</span>
+                            <span id="slider-buffer-val" class="text-amber-300 font-bold">0.80 m</span>
                         </div>
-                        <input type="range" id="slider-buffer" min="0.2" max="2.0" step="0.1" value="0.8" class="w-full accent-emerald-400 bg-slate-800 h-2 rounded-lg cursor-pointer">
+                        <input type="range" id="slider-buffer" min="0.2" max="2.0" step="0.1" value="0.8" class="w-full accent-amber-400 bg-slate-800 h-2 rounded-lg cursor-pointer">
                         <div class="flex justify-between text-[10px] font-mono text-slate-500">
                             <span>0.2 m (Tight)</span>
                             <span>0.8 m (Standard)</span>
@@ -732,8 +732,8 @@
                     <!-- HUD Telemetry Header Bar -->
                     <div class="bg-slate-900/90 px-4 sm:px-6 py-3 border-b border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs font-mono">
                         <div class="flex items-center gap-2">
-                            <span id="canvas-status-dot" class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                            <span id="canvas-status-badge" class="font-bold text-emerald-400 uppercase tracking-wider">BARRIER: VERIFIED [SAFE]</span>
+                            <span id="canvas-status-dot" class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+                            <span id="canvas-status-badge" class="font-bold text-amber-400 uppercase tracking-wider">BARRIER: VERIFIED [SAFE]</span>
                         </div>
                         <div class="flex items-center gap-4 text-slate-400">
                             <span>Latency: <strong id="canvas-hud-latency" class="text-amber-300">2.1ms</strong></span>
@@ -767,7 +767,7 @@
                     <div class="p-4 bg-slate-900/80 border-t border-slate-800 font-mono text-xs space-y-2">
                         <div class="flex items-center justify-between text-slate-400 text-[11px] pb-1 border-b border-slate-800">
                             <span>FORMAL INVARIANT VALIDATOR</span>
-                            <span class="text-emerald-400">MATH GUARANTEE: ACTIVE</span>
+                            <span class="text-amber-400">MATH GUARANTEE: ACTIVE</span>
                         </div>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] pt-1">
                             <div>
@@ -776,7 +776,7 @@
                             </div>
                             <div>
                                 <span class="text-slate-500">Torque Matrix:</span>
-                                <span id="math-torque" class="text-emerald-300 font-semibold block">&tau;_applied &lt; &tau;_max (18.4 Nm / 45.0 Nm)</span>
+                                <span id="math-torque" class="text-amber-300 font-semibold block">&tau;_applied &lt; &tau;_max (18.4 Nm / 45.0 Nm)</span>
                             </div>
                         </div>
                     </div>
@@ -790,7 +790,7 @@
 <section id="robot-types" class="py-24">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto space-y-4">
-            <span class="text-xs font-mono uppercase tracking-widest text-emerald-400">Platform Versatility</span>
+            <span class="text-xs font-mono uppercase tracking-widest text-amber-400">Platform Versatility</span>
             <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
                 Engineered for Every Machine Architecture
             </h2>
@@ -811,7 +811,7 @@
                              loading="lazy" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-amber-300 border border-cyan-800/60 backdrop-blur-md">
+                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-amber-300 border border-amber-800/60 backdrop-blur-md">
                             Kinematic Safety
                         </span>
                     </div>
@@ -824,15 +824,15 @@
                         </p>
                         <ul class="space-y-2 text-xs font-mono text-slate-400">
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>Cartesian collision boundary enforcement</span>
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>Payload mass and torque barrier validation</span>
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>Singularity and joint acceleration clamp</span>
                             </li>
                         </ul>
@@ -845,7 +845,7 @@
             </div>
 
             <!-- 2. Humanoids -->
-            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
+            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
                 <div>
                     <div class="relative w-full h-52 sm:h-64 overflow-hidden">
                         <img src="{{ asset('images/humanoid.jpg') }}" 
@@ -855,7 +855,7 @@
                              loading="lazy" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-emerald-300 border border-emerald-800/60 backdrop-blur-md">
+                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-amber-300 border border-amber-800/60 backdrop-blur-md">
                             Balance &amp; Whole-Body
                         </span>
                     </div>
@@ -868,15 +868,15 @@
                         </p>
                         <ul class="space-y-2 text-xs font-mono text-slate-400">
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>Whole-body dynamic balance (ZMP) check</span>
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>Multi-limb contact wrench validation</span>
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>Self-collision avoidance between limbs</span>
                             </li>
                         </ul>
@@ -884,7 +884,7 @@
                 </div>
                 <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800/80 pt-4">
                     <span>Use Case: Agile Complex Tasks &amp; Service</span>
-                    <a href="{{ route('product') }}" class="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
+                    <a href="{{ route('product') }}" class="text-amber-400 hover:text-amber-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
                 </div>
             </div>
 
@@ -899,7 +899,7 @@
                              loading="lazy" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-amber-300 border border-cyan-800/60 backdrop-blur-md">
+                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-amber-300 border border-amber-800/60 backdrop-blur-md">
                             Navigation Bounds
                         </span>
                     </div>
@@ -912,15 +912,15 @@
                         </p>
                         <ul class="space-y-2 text-xs font-mono text-slate-400">
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>Dynamic obstacle braking distance calculations</span>
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>Restricted operational corridor geofencing</span>
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>Payload stability under lateral turning forces</span>
                             </li>
                         </ul>
@@ -933,7 +933,7 @@
             </div>
 
             <!-- 4. Drones -->
-            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-emerald-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
+            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
                 <div>
                     <div class="relative w-full h-52 sm:h-64 overflow-hidden">
                         <img src="{{ asset('images/drone.jpg') }}" 
@@ -943,7 +943,7 @@
                              loading="lazy" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-emerald-300 border border-emerald-800/60 backdrop-blur-md">
+                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-amber-300 border border-amber-800/60 backdrop-blur-md">
                             Airspace Safety
                         </span>
                     </div>
@@ -956,15 +956,15 @@
                         </p>
                         <ul class="space-y-2 text-xs font-mono text-slate-400">
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>3D convex airspace envelope enforcement</span>
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>Energy-aware return-to-home battery threshold</span>
                             </li>
                             <li class="flex items-center gap-2">
-                                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                                <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                                 <span>No-fly zone and altitude ceiling checks</span>
                             </li>
                         </ul>
@@ -972,7 +972,7 @@
                 </div>
                 <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800/80 pt-4">
                     <span>Use Case: Aerial Inspection &amp; Monitoring</span>
-                    <a href="{{ route('product') }}" class="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
+                    <a href="{{ route('product') }}" class="text-amber-400 hover:text-amber-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
                 </div>
             </div>
         </div>
@@ -980,9 +980,9 @@
 </section>
 
 <!-- Interactive Fleet Safety & ROI Impact Calculator -->
-<section id="fleet-roi-calculator" class="py-24 relative overflow-hidden bg-gradient-to-b from-[#080c14] via-slate-950/90 to-[#080c14] border-t border-slate-800/80">
+<section id="fleet-roi-calculator" class="py-24 relative overflow-hidden bg-gradient-to-b from-[#09090b] via-slate-950/90 to-[#09090b] border-t border-slate-800/80">
     <!-- Ambient Radial Glow -->
-    <div class="absolute inset-0 pointer-events-none glow-radial-cyan opacity-40" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-amber opacity-40" aria-hidden="true"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <!-- Section Header -->
@@ -1065,10 +1065,10 @@
             <!-- Right Results Column -->
             <div class="lg:col-span-6 space-y-6">
                 <!-- Large Highlight Card -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-emerald-500/40 shadow-2xl bg-gradient-to-br from-slate-900/90 via-slate-950/95 to-slate-900/90 relative overflow-hidden">
-                    <div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-emerald-500/10 blur-2xl pointer-events-none"></div>
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-amber-500/40 shadow-2xl bg-gradient-to-br from-slate-900/90 via-slate-950/95 to-slate-900/90 relative overflow-hidden">
+                    <div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-amber-500/10 blur-2xl pointer-events-none"></div>
 
-                    <span class="text-xs font-mono uppercase tracking-widest text-emerald-400 block mb-2">Projected Annual Financial Impact</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-amber-400 block mb-2">Projected Annual Financial Impact</span>
                     
                     <div class="flex items-baseline gap-2 mb-4">
                         <span id="roi-annual-savings" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight font-mono">$337,500</span>
@@ -1089,13 +1089,13 @@
 
                         <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
                             <span class="text-xs font-mono text-slate-400 block mb-1">Commissioning Speedup</span>
-                            <span id="roi-speedup" class="text-2xl font-bold font-mono text-emerald-400">88%</span>
+                            <span id="roi-speedup" class="text-2xl font-bold font-mono text-amber-400">88%</span>
                             <span class="text-[11px] font-mono text-slate-500 block mt-0.5">Faster deployment cycle</span>
                         </div>
 
                         <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
                             <span class="text-xs font-mono text-slate-400 block mb-1">Safety Invariant Status</span>
-                            <span class="text-lg font-bold font-mono text-emerald-400">100% Pre-Check</span>
+                            <span class="text-lg font-bold font-mono text-amber-400">100% Pre-Check</span>
                             <span class="text-[11px] font-mono text-slate-500 block mt-0.5">Zero kinematic breaches</span>
                         </div>
 
@@ -1119,7 +1119,7 @@
 </section>
 
 <!-- Call to Action Banner -->
-<section class="py-20 relative overflow-hidden bg-gradient-to-b from-[#080c14] via-slate-900/90 to-[#080c14] border-t border-slate-800/80">
+<section class="py-20 relative overflow-hidden bg-gradient-to-b from-[#09090b] via-slate-900/90 to-[#09090b] border-t border-slate-800/80">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
         <span class="text-xs font-mono uppercase tracking-widest text-amber-400">Deploy Plain-Language Control</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white">

@@ -13,16 +13,16 @@
              aria-hidden="true" 
              class="w-full h-full object-cover object-center scale-100 opacity-80 sm:opacity-90 filter contrast-110 brightness-95">
         <!-- Balanced vignette gradient overlay ensuring the background is clearly visible while typography pops -->
-        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14]/75 via-[#080c14]/40 to-[#080c14]"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09090b]/75 via-[#09090b]/40 to-[#09090b]"></div>
     </div>
 
     <!-- Ambient Radial Glows -->
-    <div class="absolute inset-0 pointer-events-none glow-radial-cyan opacity-80" aria-hidden="true"></div>
-    <div class="absolute inset-0 pointer-events-none glow-radial-emerald opacity-60" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-amber opacity-80" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-gold opacity-60" aria-hidden="true"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-xl shadow-black/80 backdrop-blur-md">
-            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping" aria-hidden="true"></span>
             <span>Inquiries &amp; Deployments</span>
         </div>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
@@ -42,7 +42,7 @@
              alt="HOPn Robotics Contact Background" 
              aria-hidden="true" 
              class="w-full h-full object-cover object-center opacity-25 filter contrast-110 brightness-75">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14] via-[#080c14]/85 to-[#080c14]"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09090b] via-[#09090b]/85 to-[#09090b]"></div>
     </div>
 
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,7 +67,7 @@
 
                 <div class="space-y-4 text-sm">
                     <div class="glass-panel p-5 rounded-xl border border-slate-800 flex items-start gap-3.5">
-                        <div class="w-9 h-9 rounded-lg bg-amber-950/80 border border-cyan-800 flex items-center justify-center text-amber-400 shrink-0">
+                        <div class="w-9 h-9 rounded-lg bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400 shrink-0">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -80,7 +80,7 @@
                     </div>
 
                     <div class="glass-panel p-5 rounded-xl border border-slate-800 flex items-start gap-3.5">
-                        <div class="w-9 h-9 rounded-lg bg-emerald-950/80 border border-emerald-800 flex items-center justify-center text-emerald-400 shrink-0">
+                        <div class="w-9 h-9 rounded-lg bg-amber-950/80 border border-amber-800/60 flex items-center justify-center text-amber-400 shrink-0">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                             </svg>
@@ -111,13 +111,13 @@
                     
                     <!-- Flash Success Message -->
                     @if (session('success'))
-                        <div class="mb-8 p-4 rounded-xl bg-emerald-950/80 border border-emerald-500/50 flex items-start gap-3 shadow-lg shadow-emerald-950/40" role="alert">
-                            <svg class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <div class="mb-8 p-4 rounded-xl bg-amber-950/80 border border-amber-500/50 flex items-start gap-3 shadow-lg shadow-amber-950/40" role="alert">
+                            <svg class="w-5 h-5 text-amber-400 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                             <div>
-                                <h3 class="text-sm font-semibold text-emerald-300">Message Delivered Successfully</h3>
-                                <p class="text-xs text-emerald-200/90 mt-1 leading-relaxed">{{ session('success') }}</p>
+                                <h3 class="text-sm font-semibold text-amber-300">Message Delivered Successfully</h3>
+                                <p class="text-xs text-amber-200/90 mt-1 leading-relaxed">{{ session('success') }}</p>
                             </div>
                         </div>
                     @endif

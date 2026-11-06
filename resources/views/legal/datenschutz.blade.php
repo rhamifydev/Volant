@@ -6,7 +6,7 @@
 @section('content')
 <section class="py-16 sm:py-20 border-b border-slate-800/80 bg-grid-pattern relative">
     <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
-        <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">German Privacy Policy &bull; DSGVO</span>
+        <span class="text-xs font-mono uppercase tracking-widest text-amber-400">German Privacy Policy &bull; DSGVO</span>
         <h1 class="text-4xl font-extrabold text-white tracking-tight">Datenschutzerklärung</h1>
         <p class="text-slate-400 text-sm">Informationen zur Verarbeitung personenbezogener Daten gemäß DSGVO</p>
     </div>

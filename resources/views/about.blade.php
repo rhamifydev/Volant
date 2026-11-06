@@ -13,16 +13,16 @@
              aria-hidden="true" 
              class="w-full h-full object-cover object-center scale-100 opacity-80 sm:opacity-90 filter contrast-110 brightness-95">
         <!-- Balanced vignette gradient overlay ensuring the background is clearly visible while typography pops -->
-        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14]/75 via-[#080c14]/40 to-[#080c14]"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09090b]/75 via-[#09090b]/40 to-[#09090b]"></div>
     </div>
 
     <!-- Ambient Radial Glows -->
-    <div class="absolute inset-0 pointer-events-none glow-radial-cyan opacity-80" aria-hidden="true"></div>
-    <div class="absolute inset-0 pointer-events-none glow-radial-emerald opacity-60" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-amber opacity-80" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-gold opacity-60" aria-hidden="true"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-xl shadow-black/80 backdrop-blur-md">
-            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping" aria-hidden="true"></span>
             <span>Company &amp; Leadership</span>
         </div>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
@@ -42,13 +42,13 @@
              alt="HOPn Robotics atmospheric background" 
              aria-hidden="true" 
              class="w-full h-full object-cover object-center opacity-25 filter contrast-110 brightness-75">
-        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14] via-[#080c14]/85 to-[#080c14]"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09090b] via-[#09090b]/85 to-[#09090b]"></div>
     </div>
 
     <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
             <div class="md:col-span-7 space-y-5">
-                <span class="text-xs font-mono uppercase tracking-wider text-emerald-400">Our Mission</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-amber-400">Our Mission</span>
                 <h2 class="text-3xl font-bold text-white tracking-tight">
                     Safe, Verifiable Autonomy for Every Machine
                 </h2>
@@ -76,7 +76,7 @@
                     </p>
                     <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
                         <span>Legal: HOPn UG</span>
-                        <span class="text-emerald-400">Munich, Germany</span>
+                        <span class="text-amber-400">Munich, Germany</span>
                     </div>
                 </div>
             </div>

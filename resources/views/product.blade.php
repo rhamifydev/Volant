@@ -13,16 +13,16 @@
              aria-hidden="true" 
              class="w-full h-full object-cover object-center scale-100 opacity-80 sm:opacity-90 filter contrast-110 brightness-95">
         <!-- Balanced vignette gradient overlay ensuring robots are clearly visible while typography pops -->
-        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14]/75 via-[#080c14]/40 to-[#080c14]"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#09090b]/75 via-[#09090b]/40 to-[#09090b]"></div>
     </div>
 
     <!-- Ambient Radial Glows -->
-    <div class="absolute inset-0 pointer-events-none glow-radial-cyan opacity-80" aria-hidden="true"></div>
-    <div class="absolute inset-0 pointer-events-none glow-radial-emerald opacity-60" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-amber opacity-80" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-gold opacity-60" aria-hidden="true"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-xl shadow-black/80 backdrop-blur-md">
-            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping" aria-hidden="true"></span>
             <span>Deterministic Safety Architecture</span>
         </div>
         <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
@@ -47,8 +47,8 @@
                      aria-hidden="true" 
                      class="w-full h-full object-cover object-center scale-100 opacity-65 sm:opacity-75 filter contrast-115 brightness-95">
                 <!-- Balanced contrast gradient so robots are clearly visible and text stays crisp -->
-                <div class="absolute inset-0 bg-gradient-to-r from-[#080c14]/90 via-[#080c14]/70 to-[#080c14]/50"></div>
-                <div class="absolute inset-0 bg-gradient-to-t from-[#080c14]/85 via-transparent to-[#080c14]/40"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-[#09090b]/90 via-[#09090b]/70 to-[#09090b]/50"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#09090b]/85 via-transparent to-[#09090b]/40"></div>
             </div>
 
             <!-- Content Grid positioned above background -->
@@ -86,7 +86,7 @@
                                 <p class="text-slate-200 mt-1">Contextual bindings match entity names ("turbine flange") to spatial CAD landmarks and active asset registries.</p>
                             </div>
                             <div class="p-3 rounded bg-slate-950/90 border border-slate-800">
-                                <span class="text-emerald-400">3. Intent Representation:</span>
+                                <span class="text-amber-400">3. Intent Representation:</span>
                                 <p class="text-slate-200 mt-1">Generates an intermediate semantic goal structure independent of actuator hardware specifics.</p>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                         <p>plan.<span class="terminal-syntax-func">generateSpline</span>({ algorithm: <span class="terminal-syntax-str">'MIN_JERK'</span>, dt: <span class="terminal-syntax-keyword">0.002</span> });</p>
                         <p>plan.<span class="terminal-syntax-func">resolveInverseKinematics</span>({ dof: <span class="terminal-syntax-keyword">6</span>, damping: <span class="terminal-syntax-keyword">0.05</span> });</p>
                         <p>plan.<span class="terminal-syntax-func">bindToolCenterPoint</span>({ offset_z: <span class="terminal-syntax-keyword">0.142</span>, camera_mount: <span class="terminal-syntax-keyword">true</span> });</p>
-                        <div class="pt-2 text-emerald-400 font-bold border-t border-slate-800">
+                        <div class="pt-2 text-amber-400 font-bold border-t border-slate-800">
                             &gt; COMPILED 14 DETERMINISTIC WAYPOINTS
                         </div>
                     </div>
@@ -119,7 +119,7 @@
             </div>
 
             <div class="lg:col-span-5 order-1 lg:order-2 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-950/80 border border-cyan-800 text-amber-400 text-xs font-mono">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-950/80 border border-amber-800/60 text-amber-400 text-xs font-mono">
                     Step 02 &bull; Deterministic Translation
                 </div>
                 <h2 class="text-3xl font-bold text-white">Compile</h2>
@@ -137,7 +137,7 @@
         <!-- Step 3: Verify -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div class="lg:col-span-5 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-emerald-950/80 border border-emerald-800 text-emerald-400 text-xs font-mono">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-950/80 border border-amber-800/60 text-amber-400 text-xs font-mono">
                     Step 03 &bull; Mathematical Safety Barrier
                 </div>
                 <h2 class="text-3xl font-bold text-white">Verify</h2>
@@ -149,42 +149,42 @@
                 </p>
                 <ul class="space-y-2 text-xs font-mono text-slate-300">
                     <li class="flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                         <span>Zero human collision risk (ISO 10218 / TS 15066 adherence)</span>
                     </li>
                     <li class="flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                         <span>Actuator torque, velocity, and jerk within rated thermal envelope</span>
                     </li>
                     <li class="flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400" aria-hidden="true"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-amber-400" aria-hidden="true"></span>
                         <span>Geofence volumes and restricted exclusion zones guaranteed untouched</span>
                     </li>
                 </ul>
             </div>
 
             <div class="lg:col-span-7">
-                <div class="glass-panel p-6 rounded-2xl border border-emerald-500/40 shadow-xl shadow-emerald-950/20">
+                <div class="glass-panel p-6 rounded-2xl border border-amber-500/40 shadow-xl shadow-amber-950/20">
                     <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
                         <span>FORMAL_VERIFICATION_CERTIFIER</span>
-                        <span class="text-emerald-400">ALL_INVARIANTS_PASSED</span>
+                        <span class="text-amber-400">ALL_INVARIANTS_PASSED</span>
                     </div>
                     <div class="mt-4 space-y-3 font-mono text-xs">
                         <div class="flex items-center justify-between p-3 rounded bg-slate-950/70 border border-slate-800">
                             <span class="text-slate-300">Kinematic Singularity Barrier</span>
-                            <span class="text-emerald-400 font-bold">[PASSED &bull; Margin 21.6°]</span>
+                            <span class="text-amber-400 font-bold">[PASSED &bull; Margin 21.6°]</span>
                         </div>
                         <div class="flex items-center justify-between p-3 rounded bg-slate-950/70 border border-slate-800">
                             <span class="text-slate-300">Continuous Collision Swept-Volume</span>
-                            <span class="text-emerald-400 font-bold">[PASSED &bull; Clearance &gt; 180mm]</span>
+                            <span class="text-amber-400 font-bold">[PASSED &bull; Clearance &gt; 180mm]</span>
                         </div>
                         <div class="flex items-center justify-between p-3 rounded bg-slate-950/70 border border-slate-800">
                             <span class="text-slate-300">Joint Torque Maximum Limit</span>
-                            <span class="text-emerald-400 font-bold">[PASSED &bull; Peak 68% Rated]</span>
+                            <span class="text-amber-400 font-bold">[PASSED &bull; Peak 68% Rated]</span>
                         </div>
                         <div class="flex items-center justify-between p-3 rounded bg-slate-950/70 border border-slate-800">
                             <span class="text-slate-300">3D Convex Geofence Invariant</span>
-                            <span class="text-emerald-400 font-bold">[PASSED &bull; Inside Polygon]</span>
+                            <span class="text-amber-400 font-bold">[PASSED &bull; Inside Polygon]</span>
                         </div>
                     </div>
                 </div>
@@ -205,14 +205,14 @@
                         <p class="text-slate-500">// Low-latency hardware dispatch</p>
                         <p class="text-amber-300">&gt; Authenticated cryptographic signature verified</p>
                         <p class="text-slate-300">&gt; Streaming to CANopen / EtherCAT / ROS 2 micro-controller bus</p>
-                        <p class="text-emerald-400">&gt; Real-time observer loop: Delta error &lt; 0.04mm</p>
+                        <p class="text-amber-400">&gt; Real-time observer loop: Delta error &lt; 0.04mm</p>
                         <p class="text-slate-400">&gt; Watchdog timer heartbeat: Active (0.8ms)</p>
                     </div>
                 </div>
             </div>
 
             <div class="lg:col-span-5 order-1 lg:order-2 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-950/80 border border-cyan-800 text-amber-400 text-xs font-mono">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-950/80 border border-amber-800/60 text-amber-400 text-xs font-mono">
                     Step 04 &bull; Real-Time Actuation
                 </div>
                 <h2 class="text-3xl font-bold text-white">Deploy</h2>
@@ -250,7 +250,7 @@
                 </div>
             </div>
 
-            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition duration-300 group">
+            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition duration-300 group">
                 <div class="h-44 overflow-hidden relative">
                     <img src="{{ asset('images/humanoid.jpg') }}" alt="Humanoid Robot" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
@@ -272,7 +272,7 @@
                 </div>
             </div>
 
-            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition duration-300 group">
+            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition duration-300 group">
                 <div class="h-44 overflow-hidden relative">
                     <img src="{{ asset('images/drone.jpg') }}" alt="Autonomous Drone UAV" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
@@ -317,13 +317,13 @@
                         <td class="py-4 px-4 font-semibold text-white">Determinism</td>
                         <td class="py-4 px-4">High (rigid)</td>
                         <td class="py-4 px-4 text-rose-400">Low (hallucination risk)</td>
-                        <td class="py-4 px-4 bg-amber-950/30 text-emerald-300 font-semibold">100% Deterministic Primitives</td>
+                        <td class="py-4 px-4 bg-amber-950/30 text-amber-300 font-semibold">100% Deterministic Primitives</td>
                     </tr>
                     <tr>
                         <td class="py-4 px-4 font-semibold text-white">Pre-motion Safety Check</td>
                         <td class="py-4 px-4">Manual human testing</td>
                         <td class="py-4 px-4 text-rose-400">None (direct action)</td>
-                        <td class="py-4 px-4 bg-amber-950/30 text-emerald-300 font-semibold">Mathematical Invariant Barrier</td>
+                        <td class="py-4 px-4 bg-amber-950/30 text-amber-300 font-semibold">Mathematical Invariant Barrier</td>
                     </tr>
                     <tr>
                         <td class="py-4 px-4 font-semibold text-white">Hardware Adaptability</td>
@@ -335,7 +335,7 @@
                         <td class="py-4 px-4 font-semibold text-white">Operator Skill Threshold</td>
                         <td class="py-4 px-4">Robotics engineer required</td>
                         <td class="py-4 px-4">Low, but hazardous</td>
-                        <td class="py-4 px-4 bg-amber-950/30 text-emerald-300 font-semibold">Accessible to any field operator</td>
+                        <td class="py-4 px-4 bg-amber-950/30 text-amber-300 font-semibold">Accessible to any field operator</td>
                     </tr>
                 </tbody>
             </table>

@@ -698,12 +698,12 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
                 isUnsafe = false;
                 if (statusBadge) {
                     statusBadge.textContent = 'BARRIER: VERIFIED [SAFE]';
-                    statusBadge.className = 'font-bold text-emerald-400 uppercase tracking-wider';
+                    statusBadge.className = 'font-bold text-amber-400 uppercase tracking-wider';
                 }
-                if (statusDot) statusDot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse';
+                if (statusDot) statusDot.className = 'w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse';
                 if (dangerBanner) dangerBanner.classList.add('hidden');
                 if (mathCbf) {
-                    mathCbf.innerHTML = 'h(x) = &nabla;h &bull; f(x) &ge; -&gamma;(h) <span class="text-emerald-400 font-bold">[+0.482 &ge; 0 HOLDS]</span>';
+                    mathCbf.innerHTML = 'h(x) = &nabla;h &bull; f(x) &ge; -&gamma;(h) <span class="text-amber-400 font-bold">[+0.482 &ge; 0 HOLDS]</span>';
                 }
                 if (mathTorque) {
                     mathTorque.innerHTML = `&tau;_applied &lt; &tau;_max (${(payload * speed * 0.35).toFixed(1)} Nm / 45.0 Nm)`;
@@ -880,7 +880,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
             }
 
             // 3. Trajectory Spline from Robot to Target
-            ctx.strokeStyle = isUnsafe ? 'rgba(239, 68, 68, 0.8)' : 'rgba(6, 182, 212, 0.6)';
+            ctx.strokeStyle = isUnsafe ? 'rgba(239, 68, 68, 0.8)' : 'rgba(200, 137, 58, 0.7)';
             ctx.lineWidth = 2;
             ctx.setLineDash([4, 4]);
             ctx.beginPath();
@@ -903,14 +903,14 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
                 const px = invT * invT * currentX + 2 * invT * p.t * cpX + p.t * p.t * targetX;
                 const py = invT * invT * currentY + 2 * invT * p.t * cpY + p.t * p.t * targetY;
 
-                ctx.fillStyle = isUnsafe ? '#f87171' : '#38bdf8';
+                ctx.fillStyle = isUnsafe ? '#f87171' : '#fbbf24';
                 ctx.beginPath();
                 ctx.arc(px, py, 2.5, 0, Math.PI * 2);
                 ctx.fill();
             });
 
             // 4. Target Waypoint Reticle
-            ctx.strokeStyle = isUnsafe ? '#f87171' : '#34d399';
+            ctx.strokeStyle = isUnsafe ? '#f87171' : '#c8893a';
             ctx.lineWidth = 2;
             ctx.beginPath();
             ctx.arc(targetX, targetY, 14, 0, Math.PI * 2);
@@ -925,7 +925,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
             ctx.stroke();
 
             // Target Text
-            ctx.fillStyle = isUnsafe ? '#fca5a5' : '#6ee7b7';
+            ctx.fillStyle = isUnsafe ? '#fca5a5' : '#f3ede1';
             ctx.font = '10px monospace';
             ctx.textAlign = 'left';
             ctx.fillText('WP-TARGET', targetX + 18, targetY - 10);
@@ -939,7 +939,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
 
                 // Base mount
                 ctx.fillStyle = '#1e293b';
-                ctx.strokeStyle = '#06b6d4';
+                ctx.strokeStyle = '#c8893a';
                 ctx.lineWidth = 2;
                 ctx.beginPath();
                 ctx.rect(baseX - 25, baseY - 12, 50, 24);
@@ -963,7 +963,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
                 const wristY = elbowY + L2 * Math.sin(q1 + q2);
 
                 // Arm Link 1
-                ctx.strokeStyle = isUnsafe ? '#991b1b' : '#0e7490';
+                ctx.strokeStyle = isUnsafe ? '#991b1b' : '#a36622';
                 ctx.lineWidth = 14;
                 ctx.lineCap = 'round';
                 ctx.beginPath();
@@ -972,7 +972,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
                 ctx.stroke();
 
                 // Arm Link 2
-                ctx.strokeStyle = isUnsafe ? '#7f1d1d' : '#155e75';
+                ctx.strokeStyle = isUnsafe ? '#7f1d1d' : '#8c5418';
                 ctx.lineWidth = 10;
                 ctx.beginPath();
                 ctx.moveTo(elbowX, elbowY);
@@ -980,7 +980,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
                 ctx.stroke();
 
                 // Joints
-                ctx.fillStyle = isUnsafe ? '#ef4444' : '#22d3ee';
+                ctx.fillStyle = isUnsafe ? '#ef4444' : '#e5a352';
                 [baseX, elbowX, wristX].forEach((jx, idx) => {
                     const jy = [baseY, elbowY, wristY][idx];
                     ctx.beginPath();
@@ -989,7 +989,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
                 });
 
                 // Laser Tool Beam from wrist to target
-                ctx.strokeStyle = isUnsafe ? 'rgba(239, 68, 68, 0.8)' : 'rgba(52, 211, 153, 0.85)';
+                ctx.strokeStyle = isUnsafe ? 'rgba(239, 68, 68, 0.8)' : 'rgba(200, 137, 58, 0.9)';
                 ctx.lineWidth = 1.5;
                 ctx.beginPath();
                 ctx.moveTo(wristX, wristY);
@@ -1007,7 +1007,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
 
                 // Drone Body
                 ctx.fillStyle = '#0f172a';
-                ctx.strokeStyle = isUnsafe ? '#ef4444' : '#06b6d4';
+                ctx.strokeStyle = isUnsafe ? '#ef4444' : '#c8893a';
                 ctx.lineWidth = 2;
                 ctx.beginPath();
                 ctx.arc(0, 0, 16, 0, Math.PI * 2);
@@ -1025,7 +1025,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
                     ctx.stroke();
 
                     // Spinning Propeller
-                    ctx.strokeStyle = isUnsafe ? '#f87171' : '#38bdf8';
+                    ctx.strokeStyle = isUnsafe ? '#f87171' : '#fbbf24';
                     ctx.lineWidth = 1.5;
                     ctx.beginPath();
                     ctx.arc(pos[0], pos[1], 10, droneAngle, droneAngle + Math.PI);
@@ -1045,7 +1045,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
 
                 // Rover Body
                 ctx.fillStyle = '#1e293b';
-                ctx.strokeStyle = isUnsafe ? '#ef4444' : '#06b6d4';
+                ctx.strokeStyle = isUnsafe ? '#ef4444' : '#c8893a';
                 ctx.lineWidth = 2;
                 ctx.beginPath();
                 ctx.roundRect(-30, -20, 60, 40, 8);
@@ -1053,7 +1053,7 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
                 ctx.stroke();
 
                 // LiDAR Ray Sweep
-                ctx.strokeStyle = 'rgba(6, 182, 212, 0.4)';
+                ctx.strokeStyle = 'rgba(200, 137, 58, 0.45)';
                 ctx.lineWidth = 1;
                 ctx.beginPath();
                 ctx.moveTo(0, 0);

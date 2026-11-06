@@ -28,9 +28,9 @@
     <meta name="twitter:description" content="@yield('meta_description', 'Tell any robot or drone what to do in plain language. Verified before it moves.')">
 
     <!-- Favicon & Touch Icons -->
-    <link rel="icon" type="image/jpeg" href="{{ asset('images/volant_logo.jpg') }}">
-    <link rel="alternate icon" href="{{ asset('images/volant_logo.jpg') }}">
-    <link rel="apple-touch-icon" href="{{ asset('images/volant_logo.jpg') }}">
+    <link rel="icon" type="image/png" href="{{ asset('images/volant_logo.png') }}">
+    <link rel="alternate icon" href="{{ asset('images/volant_logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/volant_logo.png') }}">
 
     <!-- Google Fonts: Lobster -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,32 +38,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
     <!-- Theme Color for Mobile Browsers -->
-    <meta name="theme-color" content="#080c14">
+    <meta name="theme-color" content="#09090b">
 
     <!-- Scripts & Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#080c14] text-slate-200 antialiased min-h-screen flex flex-col selection:bg-amber-500 selection:text-slate-950">
+<body class="bg-[#09090b] text-slate-200 antialiased min-h-screen flex flex-col selection:bg-amber-500 selection:text-slate-950">
     <!-- Skip to Content for Screen Readers & Keyboard Navigation -->
     <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-amber-500 focus:text-slate-950 focus:font-semibold focus:rounded-md focus:shadow-xl focus:outline-none">
         Skip to main content
     </a>
 
     <!-- Top Navigation Header -->
-    <header class="sticky top-0 z-40 w-full border-b border-slate-800/80 bg-[#080c14]/90 backdrop-blur-md">
+    <header class="sticky top-0 z-40 w-full border-b border-slate-800/80 bg-[#09090b]/90 backdrop-blur-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- Brand Logo -->
                 <div class="flex items-center gap-3">
                     <a href="{{ route('home') }}" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Volant Home">
-                        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-400 p-[1.5px] shadow-lg shadow-amber-500/20 group-hover:shadow-amber-500/40 transition duration-300 overflow-hidden bg-slate-900">
-                            <img src="{{ asset('images/volant_logo.jpg') }}" alt="Volant Logo" width="44" height="44" class="w-full h-full object-cover rounded-[10px]">
+                        <div class="relative w-11 h-11 flex items-center justify-center transition duration-300 group-hover:scale-105">
+                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#C8893A] via-[#E5A352] to-[#8C5418] p-[1.5px] shadow-lg shadow-amber-500/20 group-hover:shadow-amber-500/40 transition duration-300">
+                                <div class="w-full h-full bg-[#09090b] rounded-[14px]"></div>
+                            </div>
+                            <img src="{{ asset('images/volant_logo.png') }}" alt="Volant Logo" width="44" height="44" class="relative w-full h-full object-contain p-0.5 rounded-2xl">
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-2xl font-extrabold tracking-tight text-white group-hover:text-amber-300 transition-colors leading-none">
+                            <span class="text-2xl font-black tracking-tight text-[#F3EDE1] group-hover:text-amber-300 transition-colors leading-none font-sans">
                                 Volant
                             </span>
-                            <span class="text-[10px] font-mono text-amber-400 tracking-wider mt-0.5">by HOPn UG</span>
+                            <span class="text-[10px] font-mono font-semibold text-[#C8893A] tracking-widest uppercase mt-1">by HOPn UG</span>
                         </div>
                     </a>
                 </div>
@@ -164,14 +167,14 @@
                     <div class="flex items-center gap-4">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-400 p-[1.5px] overflow-hidden bg-slate-900 shadow-md">
-                                <img src="{{ asset('images/volant_logo.jpg') }}" alt="Volant Logo" width="40" height="40" class="w-full h-full object-cover rounded-[9px]">
+                                <img src="{{ asset('images/volant_logo.png') }}" alt="Volant Logo" width="40" height="40" class="w-full h-full object-cover rounded-[9px]">
                             </div>
                             <span class="text-xl font-bold tracking-tight text-white">Volant</span>
                         </div>
                         <span class="text-slate-600 font-mono">|</span>
                         <div class="flex items-center gap-2.5">
-                            <div class="w-8 h-8 rounded-lg overflow-hidden bg-slate-900 border border-slate-700 p-0.5 shadow-sm">
-                                <img src="{{ asset('images/hopn_ug_logo.jpg') }}" alt="HOPn UG Logo" width="32" height="32" class="w-full h-full object-cover rounded-md">
+                            <div class="h-8 px-2 rounded-lg bg-white border border-amber-500/30 shadow-sm flex items-center justify-center">
+                                <img src="{{ asset('images/hopn_ug_logo.jpg') }}" alt="HOPn UG Logo" class="h-5 w-auto object-contain">
                             </div>
                             <div class="flex flex-col">
                                 <span class="text-xs font-bold text-slate-200">HOPn UG</span>
@@ -183,7 +186,7 @@
                         Volant is a deterministic safety software layer engineered by HOPn UG in Munich. We enable operators to command industrial robots, humanoids, and autonomous drones in plain natural language with mathematical pre-motion guarantees.
                     </p>
                     <div class="flex items-center gap-2 text-xs text-slate-400 font-mono">
-                        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true"></span>
+                        <span class="inline-block w-2 h-2 rounded-full bg-amber-400 animate-pulse" aria-hidden="true"></span>
                         <span>HOPn UG (haftungsbeschränkt) &bull; Munich, Bavaria</span>
                     </div>
                 </div>

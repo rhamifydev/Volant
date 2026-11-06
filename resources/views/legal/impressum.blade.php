@@ -6,7 +6,7 @@
 @section('content')
 <section class="py-16 sm:py-20 border-b border-slate-800/80 bg-grid-pattern relative">
     <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-3">
-        <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">German Legal Notice</span>
+        <span class="text-xs font-mono uppercase tracking-widest text-amber-400">German Legal Notice</span>
         <h1 class="text-4xl font-extrabold text-white tracking-tight">Impressum</h1>
         <p class="text-slate-400 text-sm">Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</p>
     </div>
@@ -35,7 +35,7 @@
                 <h2 class="text-xl font-bold text-white mb-2">Kontakt</h2>
                 <p>Telefon: [PLACEHOLDER: Telefonnummer z.B. +49 89 12345678]</p>
                 <p>E-Mail: [PLACEHOLDER: E-Mail-Adresse z.B. contact@hopn.de]</p>
-                <p>Webseite: <a href="{{ route('home') }}" class="text-cyan-400 underline">volant.hopn.de</a></p>
+                <p>Webseite: <a href="{{ route('home') }}" class="text-amber-400 underline">volant.hopn.de</a></p>
             </div>
 
             <div class="pt-4 border-t border-slate-800">
@@ -48,7 +48,7 @@
             <div class="pt-4 border-t border-slate-800">
                 <h2 class="text-xl font-bold text-white mb-2">Umsatzsteuer-Identifikationsnummer</h2>
                 <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:</p>
-                <p class="font-mono text-cyan-300">[PLACEHOLDER: DE XXXXXXXXX]</p>
+                <p class="font-mono text-amber-300">[PLACEHOLDER: DE XXXXXXXXX]</p>
             </div>
         </div>
 

@@ -8,7 +8,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
-    <link rel="alternate icon" href="{{ asset('images/volant_logo.jpg') }}">
+    <link rel="alternate icon" href="{{ asset('images/volant_logo.png') }}">
 
     <!-- Google Fonts: Inter & Lobster -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,8 +40,8 @@
                 <!-- Brand & Breadcrumb -->
                 <div class="flex items-center gap-3">
                     <a href="{{ route('home') }}" class="flex items-center gap-2.5 group">
-                        <img src="{{ asset('images/volant_logo.jpg') }}" alt="Volant Logo" width="32" height="32" class="w-8 h-8 rounded-lg shadow-sm object-cover">
-                        <span class="text-xl font-bold tracking-tight text-slate-900 group-hover:text-cyan-600 transition-colors">Volant</span>
+                        <img src="{{ asset('images/volant_logo.png') }}" alt="Volant Logo" width="32" height="32" class="w-8 h-8 rounded-lg shadow-sm object-cover">
+                        <span class="text-xl font-bold tracking-tight text-slate-900 group-hover:text-amber-600 transition-colors">Volant</span>
                     </a>
                     <span class="text-slate-300 font-light">/</span>
                     <span class="text-xs font-semibold uppercase tracking-wider px-2 py-0.5 rounded-md bg-slate-100 text-slate-700 border border-slate-200">
@@ -68,9 +68,9 @@
         
         <!-- Flash Alert -->
         @if (session('status'))
-            <div class="p-4 rounded-xl bg-emerald-50 border border-emerald-200 flex items-center justify-between text-emerald-800 text-sm shadow-xs" role="alert">
+            <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-between text-amber-800 text-sm shadow-xs" role="alert">
                 <div class="flex items-center gap-2">
-                    <svg class="w-5 h-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="w-5 h-5 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                     </svg>
                     <span>{{ session('status') }}</span>
@@ -92,7 +92,7 @@
                            name="search" 
                            value="{{ $search }}" 
                            placeholder="Search by name, company, email..." 
-                           class="w-full pl-9 pr-3 py-2 text-xs rounded-lg border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-cyan-500">
+                           class="w-full pl-9 pr-3 py-2 text-xs rounded-lg border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-500">
                     <svg class="w-4 h-4 text-slate-400 absolute left-3 top-2.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
@@ -114,13 +114,13 @@
 
             <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs space-y-1">
                 <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Received Today</span>
-                <div class="text-2xl font-bold text-cyan-600">{{ $stats['today'] }}</div>
+                <div class="text-2xl font-bold text-amber-600">{{ $stats['today'] }}</div>
                 <div class="text-[11px] text-slate-400">Since midnight UTC</div>
             </div>
 
             <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-xs space-y-1">
                 <span class="text-xs font-medium text-slate-500 uppercase tracking-wider">Distinct Companies</span>
-                <div class="text-2xl font-bold text-emerald-600">{{ $stats['companies'] }}</div>
+                <div class="text-2xl font-bold text-amber-600">{{ $stats['companies'] }}</div>
                 <div class="text-[11px] text-slate-400">Unique organizations</div>
             </div>
 
@@ -163,7 +163,7 @@
                             <!-- Header Row: Name, Company, Timestamp, Delete -->
                             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                                 <div class="flex items-center gap-3">
-                                    <div class="w-10 h-10 rounded-full bg-cyan-100 text-cyan-800 font-bold flex items-center justify-center text-sm">
+                                    <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-sm">
                                         {{ strtoupper(substr($contact->name, 0, 2)) }}
                                     </div>
                                     <div>
@@ -174,7 +174,7 @@
                                             </span>
                                         </div>
                                         <div class="flex items-center gap-3 text-xs text-slate-500 mt-0.5">
-                                            <a href="mailto:{{ $contact->email }}" class="text-cyan-600 hover:underline flex items-center gap-1">
+                                            <a href="mailto:{{ $contact->email }}" class="text-amber-600 hover:underline flex items-center gap-1">
                                                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                                 </svg>
