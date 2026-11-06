@@ -4,15 +4,31 @@
 @section('meta_description', 'Deep dive into Volant’s 4-step safety architecture: Describe, Compile, Verify, Deploy. Plain language control with deterministic pre-motion verification.')
 
 @section('content')
-<!-- Page Header -->
-<section class="py-16 sm:py-20 border-b border-slate-800/80 bg-grid-pattern relative">
-    <div class="absolute inset-0 pointer-events-none glow-radial-cyan" aria-hidden="true"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">Technical Architecture</span>
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+<!-- Page Header / Hero Section -->
+<section class="relative py-24 sm:py-32 border-b border-slate-800/80 overflow-hidden bg-grid-pattern">
+    <!-- Series of Robots Company Background Image with High Visibility -->
+    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <img src="{{ asset('images/robots-fleet.jpg') }}" 
+             alt="Robotics company manufacturing facility with series of robots" 
+             aria-hidden="true" 
+             class="w-full h-full object-cover object-center scale-100 opacity-80 sm:opacity-90 filter contrast-110 brightness-95">
+        <!-- Balanced vignette gradient overlay ensuring robots are clearly visible while typography pops -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14]/75 via-[#080c14]/40 to-[#080c14]"></div>
+    </div>
+
+    <!-- Ambient Radial Glows -->
+    <div class="absolute inset-0 pointer-events-none glow-radial-cyan opacity-80" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-emerald opacity-60" aria-hidden="true"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-cyan-500/40 text-xs font-mono text-cyan-300 shadow-xl shadow-black/80 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
+            <span>Deterministic Safety Architecture</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
             How Volant Works
         </h1>
-        <p class="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-base sm:text-lg lg:text-xl text-slate-100 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
             A comprehensive look at our deterministic software layer that converts conversational directives into mathematically proven, risk-bounded physical actions.
         </p>
     </div>
@@ -22,43 +38,57 @@
 <section class="py-20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
         
-        <!-- Step 1: Describe -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-            <div class="lg:col-span-5 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/80 border border-cyan-800 text-cyan-400 text-xs font-mono">
-                    Step 01 &bull; Natural Language Ingestion
-                </div>
-                <h2 class="text-3xl font-bold text-white">Describe</h2>
-                <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
-                    Robotics operations traditionally require skilled programmers writing low-level scripts or manipulating complex teach pendants. Volant replaces this friction by accepting natural, conversational sentences from field operators.
-                </p>
-                <p class="text-slate-400 text-sm leading-relaxed">
-                    Whether typed into a terminal or spoken over a field radio headset, the system parses high-level operational intent without forcing the operator to calculate XYZ Cartesian offsets, joint angle rotations, or spline knot vectors.
-                </p>
-                <div class="p-3.5 rounded-lg bg-slate-900 border border-slate-800 text-xs font-mono text-slate-300">
-                    <span class="text-slate-500">Example operator input:</span><br>
-                    <span class="text-cyan-300">"Inspect the turbine flange on tower 3 and notify if corrosion exceeds grade B."</span>
-                </div>
+        <!-- Step 1: Describe (With Highly Visible Series of Robots Background Image) -->
+        <div class="relative rounded-3xl p-6 sm:p-10 lg:p-12 overflow-hidden border border-cyan-500/40 shadow-2xl shadow-cyan-950/50">
+            <!-- Series of Robots Company Background Image Layer with High Opacity -->
+            <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                <img src="{{ asset('images/robots-fleet.jpg') }}" 
+                     alt="Series of industrial robots working in automated company plant" 
+                     aria-hidden="true" 
+                     class="w-full h-full object-cover object-center scale-100 opacity-65 sm:opacity-75 filter contrast-115 brightness-95">
+                <!-- Balanced contrast gradient so robots are clearly visible and text stays crisp -->
+                <div class="absolute inset-0 bg-gradient-to-r from-[#080c14]/90 via-[#080c14]/70 to-[#080c14]/50"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-[#080c14]/85 via-transparent to-[#080c14]/40"></div>
             </div>
 
-            <div class="lg:col-span-7">
-                <div class="glass-panel p-6 rounded-2xl border border-slate-800">
-                    <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
-                        <span>INGESTION_PIPELINE</span>
-                        <span class="text-cyan-400">STATUS: ACTIVE</span>
+            <!-- Content Grid positioned above background -->
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/90 border border-cyan-500/40 text-cyan-300 text-xs font-mono shadow-md backdrop-blur-md">
+                        Step 01 &bull; Natural Language Ingestion
                     </div>
-                    <div class="mt-4 space-y-3 text-xs font-mono">
-                        <div class="p-3 rounded bg-slate-950/70 border border-slate-800">
-                            <span class="text-amber-400">1. Audio / Text Stream:</span>
-                            <p class="text-slate-300 mt-1">Raw operator speech transcribed with domain-specific industrial acoustic models.</p>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">Describe</h2>
+                    <p class="text-slate-100 text-sm sm:text-base leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">
+                        Robotics operations traditionally require skilled programmers writing low-level scripts or manipulating complex teach pendants. Volant replaces this friction by accepting natural, conversational sentences from field operators.
+                    </p>
+                    <p class="text-slate-200 text-sm leading-relaxed drop-shadow-[0_1px_4px_rgba(0,0,0,0.9)]">
+                        Whether typed into a terminal or spoken over a field radio headset, the system parses high-level operational intent without forcing the operator to calculate XYZ Cartesian offsets, joint angle rotations, or spline knot vectors.
+                    </p>
+                    <div class="p-3.5 rounded-lg bg-slate-950/95 border border-slate-700/80 text-xs font-mono text-slate-200 shadow-xl backdrop-blur-md">
+                        <span class="text-slate-400">Example operator input:</span><br>
+                        <span class="text-cyan-300 font-semibold">"Inspect the turbine flange on tower 3 and notify if corrosion exceeds grade B."</span>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="glass-panel p-6 rounded-2xl border border-slate-700/80 shadow-2xl backdrop-blur-md bg-slate-950/80">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
+                            <span>INGESTION_PIPELINE</span>
+                            <span class="text-cyan-400">STATUS: ACTIVE</span>
                         </div>
-                        <div class="p-3 rounded bg-slate-950/70 border border-slate-800">
-                            <span class="text-cyan-400">2. Context Disambiguation:</span>
-                            <p class="text-slate-300 mt-1">Contextual bindings match entity names ("turbine flange") to spatial CAD landmarks and active asset registries.</p>
-                        </div>
-                        <div class="p-3 rounded bg-slate-950/70 border border-slate-800">
-                            <span class="text-emerald-400">3. Intent Representation:</span>
-                            <p class="text-slate-300 mt-1">Generates an intermediate semantic goal structure independent of actuator hardware specifics.</p>
+                        <div class="mt-4 space-y-3 text-xs font-mono">
+                            <div class="p-3 rounded bg-slate-950/90 border border-slate-800">
+                                <span class="text-amber-400">1. Audio / Text Stream:</span>
+                                <p class="text-slate-200 mt-1">Raw operator speech transcribed with domain-specific industrial acoustic models.</p>
+                            </div>
+                            <div class="p-3 rounded bg-slate-950/90 border border-slate-800">
+                                <span class="text-cyan-400">2. Context Disambiguation:</span>
+                                <p class="text-slate-200 mt-1">Contextual bindings match entity names ("turbine flange") to spatial CAD landmarks and active asset registries.</p>
+                            </div>
+                            <div class="p-3 rounded bg-slate-950/90 border border-slate-800">
+                                <span class="text-emerald-400">3. Intent Representation:</span>
+                                <p class="text-slate-200 mt-1">Generates an intermediate semantic goal structure independent of actuator hardware specifics.</p>
+                            </div>
                         </div>
                     </div>
                 </div>

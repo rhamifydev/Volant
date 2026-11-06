@@ -4,23 +4,48 @@
 @section('meta_description', 'Contact HOPn in Munich regarding Volant. Submit your inquiry to discuss plain-language verification and control for industrial arms, humanoids, mobile robots, and drones.')
 
 @section('content')
-<!-- Page Header -->
-<section class="py-16 sm:py-20 border-b border-slate-800/80 bg-grid-pattern relative">
-    <div class="absolute inset-0 pointer-events-none glow-radial-cyan" aria-hidden="true"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">Inquiries &amp; Deployments</span>
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+<!-- Page Header / Hero Section -->
+<section class="relative py-24 sm:py-32 border-b border-slate-800/80 overflow-hidden bg-grid-pattern">
+    <!-- Contact Page Hero Background Image with High Visibility -->
+    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <img src="{{ asset('images/contact.webp') }}" 
+             alt="Contact HOPn Robotics — Engineering & Deployment Inquiries" 
+             aria-hidden="true" 
+             class="w-full h-full object-cover object-center scale-100 opacity-80 sm:opacity-90 filter contrast-110 brightness-95">
+        <!-- Balanced vignette gradient overlay ensuring the background is clearly visible while typography pops -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14]/75 via-[#080c14]/40 to-[#080c14]"></div>
+    </div>
+
+    <!-- Ambient Radial Glows -->
+    <div class="absolute inset-0 pointer-events-none glow-radial-cyan opacity-80" aria-hidden="true"></div>
+    <div class="absolute inset-0 pointer-events-none glow-radial-emerald opacity-60" aria-hidden="true"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-cyan-500/40 text-xs font-mono text-cyan-300 shadow-xl shadow-black/80 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
+            <span>Inquiries &amp; Deployments</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
             Contact Our Engineering Team
         </h1>
-        <p class="text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        <p class="text-base sm:text-lg lg:text-xl text-slate-100 max-w-2xl mx-auto leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
             Have a question about Volant or want to explore integrating our verification layer into your fleet? Send us a message below.
         </p>
     </div>
 </section>
 
 <!-- Contact Form Section -->
-<section class="py-20">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="py-20 relative overflow-hidden">
+    <!-- Subtle Background Image Layer continuing through the form section -->
+    <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+        <img src="{{ asset('images/contact.webp') }}" 
+             alt="HOPn Robotics Contact Background" 
+             aria-hidden="true" 
+             class="w-full h-full object-cover object-center opacity-25 filter contrast-110 brightness-75">
+        <div class="absolute inset-0 bg-gradient-to-b from-[#080c14] via-[#080c14]/85 to-[#080c14]"></div>
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
             
             <!-- Left Info Column -->
