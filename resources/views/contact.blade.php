@@ -21,7 +21,7 @@
     <div class="absolute inset-0 pointer-events-none glow-radial-emerald opacity-60" aria-hidden="true"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-cyan-500/40 text-xs font-mono text-cyan-300 shadow-xl shadow-black/80 backdrop-blur-md">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-xl shadow-black/80 backdrop-blur-md">
             <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
             <span>Inquiries &amp; Deployments</span>
         </div>
@@ -56,7 +56,7 @@
                             <img src="{{ asset('images/hopn_ug_logo.jpg') }}" alt="HOPn UG Logo" width="44" height="44" class="w-full h-full object-cover rounded-lg">
                         </div>
                         <div>
-                            <span class="text-xs font-mono uppercase tracking-wider text-cyan-400">Headquarters</span>
+                            <span class="text-xs font-mono uppercase tracking-wider text-amber-400">Headquarters</span>
                             <h2 class="text-2xl font-bold text-white">HOPn UG &bull; Munich</h2>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
 
                 <div class="space-y-4 text-sm">
                     <div class="glass-panel p-5 rounded-xl border border-slate-800 flex items-start gap-3.5">
-                        <div class="w-9 h-9 rounded-lg bg-cyan-950/80 border border-cyan-800 flex items-center justify-center text-cyan-400 shrink-0">
+                        <div class="w-9 h-9 rounded-lg bg-amber-950/80 border border-cyan-800 flex items-center justify-center text-amber-400 shrink-0">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -162,7 +162,7 @@
                                    autocomplete="name"
                                    aria-required="true"
                                    @error('name') aria-invalid="true" aria-describedby="name-error" @enderror
-                                   class="w-full px-4 py-3 rounded-lg bg-slate-950/70 border {{ $errors->has('name') ? 'border-rose-500 ring-1 ring-rose-500' : 'border-slate-800 focus:border-cyan-400' }} text-slate-100 placeholder-slate-500 text-sm focus:outline-none transition-colors">
+                                   class="w-full px-4 py-3 rounded-lg bg-slate-950/70 border {{ $errors->has('name') ? 'border-rose-500 ring-1 ring-rose-500' : 'border-slate-800 focus:border-amber-400' }} text-slate-100 placeholder-slate-500 text-sm focus:outline-none transition-colors">
                             @error('name')
                                 <p id="name-error" class="mt-1.5 text-xs text-rose-400 font-mono">{{ $message }}</p>
                             @enderror
@@ -182,7 +182,7 @@
                                    autocomplete="email"
                                    aria-required="true"
                                    @error('email') aria-invalid="true" aria-describedby="email-error" @enderror
-                                   class="w-full px-4 py-3 rounded-lg bg-slate-950/70 border {{ $errors->has('email') ? 'border-rose-500 ring-1 ring-rose-500' : 'border-slate-800 focus:border-cyan-400' }} text-slate-100 placeholder-slate-500 text-sm focus:outline-none transition-colors">
+                                   class="w-full px-4 py-3 rounded-lg bg-slate-950/70 border {{ $errors->has('email') ? 'border-rose-500 ring-1 ring-rose-500' : 'border-slate-800 focus:border-amber-400' }} text-slate-100 placeholder-slate-500 text-sm focus:outline-none transition-colors">
                             @error('email')
                                 <p id="email-error" class="mt-1.5 text-xs text-rose-400 font-mono">{{ $message }}</p>
                             @enderror
@@ -202,7 +202,7 @@
                                    autocomplete="organization"
                                    aria-required="true"
                                    @error('company') aria-invalid="true" aria-describedby="company-error" @enderror
-                                   class="w-full px-4 py-3 rounded-lg bg-slate-950/70 border {{ $errors->has('company') ? 'border-rose-500 ring-1 ring-rose-500' : 'border-slate-800 focus:border-cyan-400' }} text-slate-100 placeholder-slate-500 text-sm focus:outline-none transition-colors">
+                                   class="w-full px-4 py-3 rounded-lg bg-slate-950/70 border {{ $errors->has('company') ? 'border-rose-500 ring-1 ring-rose-500' : 'border-slate-800 focus:border-amber-400' }} text-slate-100 placeholder-slate-500 text-sm focus:outline-none transition-colors">
                             @error('company')
                                 <p id="company-error" class="mt-1.5 text-xs text-rose-400 font-mono">{{ $message }}</p>
                             @enderror
@@ -220,7 +220,7 @@
                                       placeholder="Tell us about your robotic or drone platform, operational constraints, and plain language control requirements..."
                                       aria-required="true"
                                       @error('message') aria-invalid="true" aria-describedby="message-error" @enderror
-                                      class="w-full px-4 py-3 rounded-lg bg-slate-950/70 border {{ $errors->has('message') ? 'border-rose-500 ring-1 ring-rose-500' : 'border-slate-800 focus:border-cyan-400' }} text-slate-100 placeholder-slate-500 text-sm focus:outline-none transition-colors">{{ old('message') }}</textarea>
+                                      class="w-full px-4 py-3 rounded-lg bg-slate-950/70 border {{ $errors->has('message') ? 'border-rose-500 ring-1 ring-rose-500' : 'border-slate-800 focus:border-amber-400' }} text-slate-100 placeholder-slate-500 text-sm focus:outline-none transition-colors">{{ old('message') }}</textarea>
                             @error('message')
                                 <p id="message-error" class="mt-1.5 text-xs text-rose-400 font-mono">{{ $message }}</p>
                             @enderror
@@ -230,7 +230,7 @@
                         <!-- Submit Button -->
                         <div>
                             <button type="submit" 
-                                    class="w-full flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 rounded-lg shadow-lg shadow-cyan-500/25 transition-all focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                                    class="w-full flex items-center justify-center gap-2 px-6 py-3.5 text-sm font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 rounded-lg shadow-lg shadow-amber-500/25 transition-all focus:outline-none focus:ring-2 focus:ring-amber-400">
                                 <span>Send Inquiry to HOPn</span>
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>

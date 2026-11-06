@@ -60,10 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Update active state on buttons
                 simulationButtons.forEach(b => {
-                    b.classList.remove('bg-cyan-500/20', 'border-cyan-400', 'text-cyan-300');
+                    b.classList.remove('bg-amber-500/20', 'border-amber-400', 'text-amber-300');
                     b.classList.add('bg-slate-800/60', 'border-slate-700', 'text-slate-400');
                 });
-                btn.classList.add('bg-cyan-500/20', 'border-cyan-400', 'text-cyan-300');
+                btn.classList.add('bg-amber-500/20', 'border-amber-400', 'text-amber-300');
                 btn.classList.remove('bg-slate-800/60', 'border-slate-700', 'text-slate-400');
 
                 // Visual transition
@@ -242,12 +242,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 const key = btn.getAttribute('data-video-feed-btn');
                 const indicator = btn.querySelector('.feed-active-indicator');
                 if (key === feedKey) {
-                    btn.classList.add('bg-cyan-500/20', 'border-cyan-400', 'text-cyan-300', 'shadow-md', 'shadow-cyan-500/20');
+                    btn.classList.add('bg-amber-500/20', 'border-amber-400', 'text-amber-300', 'shadow-md', 'shadow-amber-500/20');
                     btn.classList.remove('bg-slate-800/80', 'border-slate-700', 'text-slate-400');
                     btn.setAttribute('aria-selected', 'true');
                     if (indicator) indicator.classList.remove('hidden');
                 } else {
-                    btn.classList.remove('bg-cyan-500/20', 'border-cyan-400', 'text-cyan-300', 'shadow-md', 'shadow-cyan-500/20');
+                    btn.classList.remove('bg-amber-500/20', 'border-amber-400', 'text-amber-300', 'shadow-md', 'shadow-amber-500/20');
                     btn.classList.add('bg-slate-800/80', 'border-slate-700', 'text-slate-400');
                     btn.setAttribute('aria-selected', 'false');
                     if (indicator) indicator.classList.add('hidden');
@@ -528,21 +528,21 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
                 stepTabButtons.forEach(b => {
                     const num = b.querySelector('.step-num');
                     const tag = b.querySelector('.step-active-tag');
-                    b.classList.remove('border-cyan-400', 'shadow-lg', 'shadow-cyan-500/10');
+                    b.classList.remove('border-amber-400', 'shadow-lg', 'shadow-amber-500/10');
                     b.classList.add('border-slate-800');
                     if (num) {
-                        num.classList.remove('text-cyan-400');
+                        num.classList.remove('text-amber-400');
                         num.classList.add('text-slate-400');
                     }
                     if (tag) tag.classList.add('hidden');
                 });
 
-                btn.classList.add('border-cyan-400', 'shadow-lg', 'shadow-cyan-500/10');
+                btn.classList.add('border-amber-400', 'shadow-lg', 'shadow-amber-500/10');
                 btn.classList.remove('border-slate-800');
                 const activeNum = btn.querySelector('.step-num');
                 const activeTag = btn.querySelector('.step-active-tag');
                 if (activeNum) {
-                    activeNum.classList.add('text-cyan-400');
+                    activeNum.classList.add('text-amber-400');
                     activeNum.classList.remove('text-slate-400');
                 }
                 if (activeTag) activeTag.classList.remove('hidden');
@@ -763,10 +763,10 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
             btn.addEventListener('click', () => {
                 currentRobot = btn.getAttribute('data-canvas-robot');
                 robotSelectorBtns.forEach(b => {
-                    b.classList.remove('bg-cyan-500/20', 'border-cyan-400', 'text-cyan-300', 'shadow-md', 'shadow-cyan-500/20');
+                    b.classList.remove('bg-amber-500/20', 'border-amber-400', 'text-amber-300', 'shadow-md', 'shadow-amber-500/20');
                     b.classList.add('bg-slate-900', 'border-slate-700', 'text-slate-400');
                 });
-                btn.classList.add('bg-cyan-500/20', 'border-cyan-400', 'text-cyan-300', 'shadow-md', 'shadow-cyan-500/20');
+                btn.classList.add('bg-amber-500/20', 'border-amber-400', 'text-amber-300', 'shadow-md', 'shadow-amber-500/20');
                 btn.classList.remove('bg-slate-900', 'border-slate-700', 'text-slate-400');
                 evaluateSafety();
                 playSciFiTone(659, 0.08);
@@ -1137,10 +1137,10 @@ def verify_motion_barrier(x_state, u_control, env_costmap):
                 shiftMultiplier = shift === '1' ? 1.0 : (shift === '2' ? 1.5 : 2.2);
 
                 shiftButtons.forEach(b => {
-                    b.classList.remove('bg-cyan-500/20', 'border-cyan-400', 'text-cyan-300', 'shadow-md', 'shadow-cyan-500/10', 'font-bold');
+                    b.classList.remove('bg-amber-500/20', 'border-amber-400', 'text-amber-300', 'shadow-md', 'shadow-amber-500/10', 'font-bold');
                     b.classList.add('bg-slate-900', 'border-slate-700', 'text-slate-400');
                 });
-                btn.classList.add('bg-cyan-500/20', 'border-cyan-400', 'text-cyan-300', 'shadow-md', 'shadow-cyan-500/10', 'font-bold');
+                btn.classList.add('bg-amber-500/20', 'border-amber-400', 'text-amber-300', 'shadow-md', 'shadow-amber-500/10', 'font-bold');
                 btn.classList.remove('bg-slate-900', 'border-slate-700', 'text-slate-400');
 
                 updateROI();

@@ -21,7 +21,7 @@
     <div class="absolute inset-0 pointer-events-none glow-radial-emerald opacity-60" aria-hidden="true"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-cyan-500/40 text-xs font-mono text-cyan-300 shadow-xl shadow-black/80 backdrop-blur-md">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-xl shadow-black/80 backdrop-blur-md">
             <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
             <span>Company &amp; Leadership</span>
         </div>
@@ -63,11 +63,11 @@
             <div class="md:col-span-5">
                 <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
                     <div class="flex items-center gap-3.5">
-                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 p-1 flex items-center justify-center shrink-0 overflow-hidden shadow-lg shadow-cyan-950/40">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 p-1 flex items-center justify-center shrink-0 overflow-hidden shadow-lg shadow-amber-950/40">
                             <img src="{{ asset('images/hopn_ug_logo.jpg') }}" alt="HOPn UG Official Company Logo" width="48" height="48" class="w-full h-full object-cover rounded-lg">
                         </div>
                         <div>
-                            <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider">Company Headquarters</span>
+                            <span class="text-xs font-mono text-amber-400 uppercase tracking-wider">Company Headquarters</span>
                             <h3 class="text-base font-bold text-white">HOPn UG &bull; Munich</h3>
                         </div>
                     </div>
@@ -83,10 +83,10 @@
         </div>
 
         <!-- Founder Profile: Prof. Dr. Ahmed Ebada -->
-        <div class="glass-panel p-8 sm:p-10 rounded-2xl border border-cyan-500/30">
+        <div class="glass-panel p-8 sm:p-10 rounded-2xl border border-amber-500/30">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                 <div class="md:col-span-4 flex flex-col items-center text-center space-y-3">
-                    <div class="w-32 h-32 rounded-2xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[2px] shadow-xl shadow-cyan-950/50 overflow-hidden">
+                    <div class="w-32 h-32 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-400 p-[2px] shadow-xl shadow-amber-950/50 overflow-hidden">
                         <img src="{{ asset('prof.Dr.AhmedEbada.jpg') }}" 
                              alt="Prof. Dr. Ahmed Ebada, Founder of HOPn" 
                              width="128" 
@@ -95,13 +95,13 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-bold text-white">Prof. Dr. Ahmed Ebada</h3>
-                        <p class="text-xs font-mono text-cyan-400">Founder, HOPn</p>
+                        <p class="text-xs font-mono text-amber-400">Founder, HOPn</p>
                     </div>
                     <span class="text-xs text-slate-400 font-mono">Munich, Germany</span>
                 </div>
 
                 <div class="md:col-span-8 space-y-4">
-                    <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">Founder &bull; Leadership</span>
+                    <span class="text-xs font-mono uppercase tracking-widest text-amber-400">Founder &bull; Leadership</span>
                     <h3 class="text-2xl font-bold text-white">
                         Bridging Natural Language &amp; Mathematical Safety
                     </h3>
@@ -111,7 +111,7 @@
                     <p class="text-sm sm:text-base text-slate-400 leading-relaxed">
                         Under his direction, the team engineered Volant to separate probabilistic language comprehension from deterministic motion execution. This architectural separation guarantees that no matter how complex or conversational an operator's request is, safety verification remains an absolute mathematical barrier.
                     </p>
-                    <blockquote class="p-4 rounded-lg bg-slate-900/80 border-l-2 border-cyan-400 text-xs sm:text-sm text-slate-300 italic">
+                    <blockquote class="p-4 rounded-lg bg-slate-900/80 border-l-2 border-amber-400 text-xs sm:text-sm text-slate-300 italic">
                         "The future of robotics is not in replacing human operators, but in empowering them to direct machines naturally — with mathematical guarantees that the machine will never execute an unsafe move."
                     </blockquote>
                 </div>
@@ -121,25 +121,25 @@
         <!-- Guiding Principles -->
         <div class="space-y-6">
             <div class="text-center max-w-2xl mx-auto space-y-2">
-                <span class="text-xs font-mono uppercase tracking-wider text-cyan-400">Core Principles</span>
+                <span class="text-xs font-mono uppercase tracking-wider text-amber-400">Core Principles</span>
                 <h3 class="text-2xl font-bold text-white">How We Build</h3>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
                 <div class="glass-panel p-6 rounded-xl border border-slate-800">
-                    <span class="text-lg font-bold font-mono text-cyan-400 mb-2 block">01. Zero-Trust Safety</span>
+                    <span class="text-lg font-bold font-mono text-amber-400 mb-2 block">01. Zero-Trust Safety</span>
                     <p class="text-xs text-slate-300 leading-relaxed">
                         Every trajectory is treated as potentially hazardous until proven safe against physical laws, kinematic boundaries, and human proximity zones.
                     </p>
                 </div>
                 <div class="glass-panel p-6 rounded-xl border border-slate-800">
-                    <span class="text-lg font-bold font-mono text-cyan-400 mb-2 block">02. Human Intuition</span>
+                    <span class="text-lg font-bold font-mono text-amber-400 mb-2 block">02. Human Intuition</span>
                     <p class="text-xs text-slate-300 leading-relaxed">
                         Operators are subject-matter experts, not robotics code compilers. Natural communication empowers operators to focus on mission objectives.
                     </p>
                 </div>
                 <div class="glass-panel p-6 rounded-xl border border-slate-800">
-                    <span class="text-lg font-bold font-mono text-cyan-400 mb-2 block">03. Deterministic Rigor</span>
+                    <span class="text-lg font-bold font-mono text-amber-400 mb-2 block">03. Deterministic Rigor</span>
                     <p class="text-xs text-slate-300 leading-relaxed">
                         Rooted in Munich's engineering traditions, we rely on reproducible mathematics and formal methods rather than unchecked heuristics.
                     </p>
@@ -150,7 +150,7 @@
         <!-- Contact CTA -->
         <div class="text-center pt-8">
             <a href="{{ route('contact.create') }}" 
-               class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 rounded-lg shadow-lg shadow-cyan-500/20 transition-all">
+               class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 rounded-lg shadow-lg shadow-amber-500/20 transition-all">
                 <span>Connect With Our Team</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>

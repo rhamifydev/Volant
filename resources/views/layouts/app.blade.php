@@ -43,9 +43,9 @@
     <!-- Scripts & Styles -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#080c14] text-slate-200 antialiased min-h-screen flex flex-col selection:bg-cyan-500 selection:text-white">
+<body class="bg-[#080c14] text-slate-200 antialiased min-h-screen flex flex-col selection:bg-amber-500 selection:text-slate-950">
     <!-- Skip to Content for Screen Readers & Keyboard Navigation -->
-    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-cyan-500 focus:text-slate-950 focus:font-semibold focus:rounded-md focus:shadow-xl focus:outline-none">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-amber-500 focus:text-slate-950 focus:font-semibold focus:rounded-md focus:shadow-xl focus:outline-none">
         Skip to main content
     </a>
 
@@ -56,14 +56,14 @@
                 <!-- Brand Logo -->
                 <div class="flex items-center gap-3">
                     <a href="{{ route('home') }}" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Volant Home">
-                        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1.5px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition duration-300 overflow-hidden bg-slate-900">
+                        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-400 p-[1.5px] shadow-lg shadow-amber-500/20 group-hover:shadow-amber-500/40 transition duration-300 overflow-hidden bg-slate-900">
                             <img src="{{ asset('images/volant_logo.jpg') }}" alt="Volant Logo" width="44" height="44" class="w-full h-full object-cover rounded-[10px]">
                         </div>
                         <div class="flex flex-col">
-                            <span class="text-2xl font-extrabold tracking-tight text-white group-hover:text-cyan-300 transition-colors leading-none">
+                            <span class="text-2xl font-extrabold tracking-tight text-white group-hover:text-amber-300 transition-colors leading-none">
                                 Volant
                             </span>
-                            <span class="text-[10px] font-mono text-cyan-400 tracking-wider mt-0.5">by HOPn UG</span>
+                            <span class="text-[10px] font-mono text-amber-400 tracking-wider mt-0.5">by HOPn UG</span>
                         </div>
                     </a>
                 </div>
@@ -71,22 +71,22 @@
                 <!-- Desktop Navigation Links -->
                 <nav class="hidden md:flex items-center gap-1" aria-label="Primary Navigation">
                     <a href="{{ route('home') }}" 
-                       class="px-4 py-2 text-sm font-medium rounded-lg transition-colors {{ request()->routeIs('home') ? 'text-cyan-400 bg-slate-800/60 font-semibold' : 'text-slate-300 hover:text-white hover:bg-slate-800/40' }}"
+                       class="px-4 py-2 text-sm font-medium rounded-lg transition-colors {{ request()->routeIs('home') ? 'text-amber-400 bg-slate-800/60 font-semibold' : 'text-slate-300 hover:text-white hover:bg-slate-800/40' }}"
                        {{ request()->routeIs('home') ? 'aria-current="page"' : '' }}>
                         Home
                     </a>
                     <a href="{{ route('product') }}" 
-                       class="px-4 py-2 text-sm font-medium rounded-lg transition-colors {{ request()->routeIs('product') ? 'text-cyan-400 bg-slate-800/60 font-semibold' : 'text-slate-300 hover:text-white hover:bg-slate-800/40' }}"
+                       class="px-4 py-2 text-sm font-medium rounded-lg transition-colors {{ request()->routeIs('product') ? 'text-amber-400 bg-slate-800/60 font-semibold' : 'text-slate-300 hover:text-white hover:bg-slate-800/40' }}"
                        {{ request()->routeIs('product') ? 'aria-current="page"' : '' }}>
                         Product
                     </a>
                     <a href="{{ route('about') }}" 
-                       class="px-4 py-2 text-sm font-medium rounded-lg transition-colors {{ request()->routeIs('about') ? 'text-cyan-400 bg-slate-800/60 font-semibold' : 'text-slate-300 hover:text-white hover:bg-slate-800/40' }}"
+                       class="px-4 py-2 text-sm font-medium rounded-lg transition-colors {{ request()->routeIs('about') ? 'text-amber-400 bg-slate-800/60 font-semibold' : 'text-slate-300 hover:text-white hover:bg-slate-800/40' }}"
                        {{ request()->routeIs('about') ? 'aria-current="page"' : '' }}>
                         About HOPn
                     </a>
                     <a href="{{ route('contact.create') }}" 
-                       class="px-4 py-2 text-sm font-medium rounded-lg transition-colors {{ request()->routeIs('contact.*') ? 'text-cyan-400 bg-slate-800/60 font-semibold' : 'text-slate-300 hover:text-white hover:bg-slate-800/40' }}"
+                       class="px-4 py-2 text-sm font-medium rounded-lg transition-colors {{ request()->routeIs('contact.*') ? 'text-amber-400 bg-slate-800/60 font-semibold' : 'text-slate-300 hover:text-white hover:bg-slate-800/40' }}"
                        {{ request()->routeIs('contact.*') ? 'aria-current="page"' : '' }}>
                         Contact
                     </a>
@@ -95,7 +95,7 @@
                 <!-- Action CTA -->
                 <div class="hidden md:flex items-center gap-3">
                     <a href="{{ route('contact.create') }}" 
-                       class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 rounded-lg shadow-md shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-all focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900">
+                       class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 rounded-lg shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 transition-all focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-900">
                         <span>Get in Touch</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -110,7 +110,7 @@
                             aria-expanded="false" 
                             aria-controls="mobile-menu" 
                             aria-label="Toggle navigation menu"
-                            class="p-2.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                            class="p-2.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-amber-400">
                         <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
@@ -122,24 +122,24 @@
         <!-- Mobile Menu Drawer (Collapsible) -->
         <div id="mobile-menu" class="hidden md:hidden border-b border-slate-800 bg-[#0c121e] px-4 pt-3 pb-5 space-y-2">
             <a href="{{ route('home') }}" 
-               class="block px-3 py-2.5 rounded-lg text-base font-medium {{ request()->routeIs('home') ? 'bg-cyan-500/10 text-cyan-400' : 'text-slate-300 hover:bg-slate-800' }}">
+               class="block px-3 py-2.5 rounded-lg text-base font-medium {{ request()->routeIs('home') ? 'bg-amber-500/10 text-amber-400' : 'text-slate-300 hover:bg-slate-800' }}">
                 Home
             </a>
             <a href="{{ route('product') }}" 
-               class="block px-3 py-2.5 rounded-lg text-base font-medium {{ request()->routeIs('product') ? 'bg-cyan-500/10 text-cyan-400' : 'text-slate-300 hover:bg-slate-800' }}">
+               class="block px-3 py-2.5 rounded-lg text-base font-medium {{ request()->routeIs('product') ? 'bg-amber-500/10 text-amber-400' : 'text-slate-300 hover:bg-slate-800' }}">
                 Product (How It Works)
             </a>
             <a href="{{ route('about') }}" 
-               class="block px-3 py-2.5 rounded-lg text-base font-medium {{ request()->routeIs('about') ? 'bg-cyan-500/10 text-cyan-400' : 'text-slate-300 hover:bg-slate-800' }}">
+               class="block px-3 py-2.5 rounded-lg text-base font-medium {{ request()->routeIs('about') ? 'bg-amber-500/10 text-amber-400' : 'text-slate-300 hover:bg-slate-800' }}">
                 About HOPn & Founder
             </a>
             <a href="{{ route('contact.create') }}" 
-               class="block px-3 py-2.5 rounded-lg text-base font-medium {{ request()->routeIs('contact.*') ? 'bg-cyan-500/10 text-cyan-400' : 'text-slate-300 hover:bg-slate-800' }}">
+               class="block px-3 py-2.5 rounded-lg text-base font-medium {{ request()->routeIs('contact.*') ? 'bg-amber-500/10 text-amber-400' : 'text-slate-300 hover:bg-slate-800' }}">
                 Contact Us
             </a>
             <div class="pt-2">
                 <a href="{{ route('contact.create') }}" 
-                   class="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-base font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-lg shadow">
+                   class="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-base font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 rounded-lg shadow">
                     <span>Contact Our Team</span>
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -163,7 +163,7 @@
                 <div class="md:col-span-2 space-y-4">
                     <div class="flex items-center gap-4">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1.5px] overflow-hidden bg-slate-900 shadow-md">
+                            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-400 p-[1.5px] overflow-hidden bg-slate-900 shadow-md">
                                 <img src="{{ asset('images/volant_logo.jpg') }}" alt="Volant Logo" width="40" height="40" class="w-full h-full object-cover rounded-[9px]">
                             </div>
                             <span class="text-xl font-bold tracking-tight text-white">Volant</span>
@@ -175,7 +175,7 @@
                             </div>
                             <div class="flex flex-col">
                                 <span class="text-xs font-bold text-slate-200">HOPn UG</span>
-                                <span class="text-[10px] font-mono text-cyan-400">Munich, Germany</span>
+                                <span class="text-[10px] font-mono text-amber-400">Munich, Germany</span>
                             </div>
                         </div>
                     </div>
@@ -192,10 +192,10 @@
                 <div class="space-y-3">
                     <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-200">Platform</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="{{ route('home') }}" class="hover:text-cyan-400 transition-colors">Home</a></li>
-                        <li><a href="{{ route('product') }}" class="hover:text-cyan-400 transition-colors">How It Works</a></li>
-                        <li><a href="{{ route('about') }}" class="hover:text-cyan-400 transition-colors">About HOPn & Founder</a></li>
-                        <li><a href="{{ route('contact.create') }}" class="hover:text-cyan-400 transition-colors">Contact Form</a></li>
+                        <li><a href="{{ route('home') }}" class="hover:text-amber-400 transition-colors">Home</a></li>
+                        <li><a href="{{ route('product') }}" class="hover:text-amber-400 transition-colors">How It Works</a></li>
+                        <li><a href="{{ route('about') }}" class="hover:text-amber-400 transition-colors">About HOPn & Founder</a></li>
+                        <li><a href="{{ route('contact.create') }}" class="hover:text-amber-400 transition-colors">Contact Form</a></li>
                     </ul>
                 </div>
 
@@ -203,9 +203,9 @@
                 <div class="space-y-3">
                     <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-200">Legal & Compliance</h3>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="{{ route('legal.impressum') }}" class="hover:text-cyan-400 transition-colors">Impressum (Legal Notice)</a></li>
-                        <li><a href="{{ route('legal.datenschutz') }}" class="hover:text-cyan-400 transition-colors">Datenschutz (Privacy Policy)</a></li>
-                        <li><a href="{{ route('sitemap') }}" class="hover:text-cyan-400 transition-colors">XML Sitemap</a></li>
+                        <li><a href="{{ route('legal.impressum') }}" class="hover:text-amber-400 transition-colors">Impressum (Legal Notice)</a></li>
+                        <li><a href="{{ route('legal.datenschutz') }}" class="hover:text-amber-400 transition-colors">Datenschutz (Privacy Policy)</a></li>
+                        <li><a href="{{ route('sitemap') }}" class="hover:text-amber-400 transition-colors">XML Sitemap</a></li>
                     </ul>
                 </div>
             </div>

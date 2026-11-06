@@ -21,7 +21,7 @@
     <div class="absolute inset-0 pointer-events-none glow-radial-emerald opacity-60" aria-hidden="true"></div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-cyan-500/40 text-xs font-mono text-cyan-300 shadow-xl shadow-black/80 backdrop-blur-md">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-xl shadow-black/80 backdrop-blur-md">
             <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
             <span>Deterministic Safety Architecture</span>
         </div>
@@ -39,7 +39,7 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
         
         <!-- Step 1: Describe (With Highly Visible Series of Robots Background Image) -->
-        <div class="relative rounded-3xl p-6 sm:p-10 lg:p-12 overflow-hidden border border-cyan-500/40 shadow-2xl shadow-cyan-950/50">
+        <div class="relative rounded-3xl p-6 sm:p-10 lg:p-12 overflow-hidden border border-amber-500/40 shadow-2xl shadow-amber-950/50">
             <!-- Series of Robots Company Background Image Layer with High Opacity -->
             <div class="absolute inset-0 z-0 overflow-hidden pointer-events-none">
                 <img src="{{ asset('images/robots-fleet.jpg') }}" 
@@ -54,7 +54,7 @@
             <!-- Content Grid positioned above background -->
             <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                 <div class="lg:col-span-5 space-y-4">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/90 border border-cyan-500/40 text-cyan-300 text-xs font-mono shadow-md backdrop-blur-md">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-950/90 border border-amber-500/40 text-amber-300 text-xs font-mono shadow-md backdrop-blur-md">
                         Step 01 &bull; Natural Language Ingestion
                     </div>
                     <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]">Describe</h2>
@@ -66,7 +66,7 @@
                     </p>
                     <div class="p-3.5 rounded-lg bg-slate-950/95 border border-slate-700/80 text-xs font-mono text-slate-200 shadow-xl backdrop-blur-md">
                         <span class="text-slate-400">Example operator input:</span><br>
-                        <span class="text-cyan-300 font-semibold">"Inspect the turbine flange on tower 3 and notify if corrosion exceeds grade B."</span>
+                        <span class="text-amber-300 font-semibold">"Inspect the turbine flange on tower 3 and notify if corrosion exceeds grade B."</span>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@
                     <div class="glass-panel p-6 rounded-2xl border border-slate-700/80 shadow-2xl backdrop-blur-md bg-slate-950/80">
                         <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
                             <span>INGESTION_PIPELINE</span>
-                            <span class="text-cyan-400">STATUS: ACTIVE</span>
+                            <span class="text-amber-400">STATUS: ACTIVE</span>
                         </div>
                         <div class="mt-4 space-y-3 text-xs font-mono">
                             <div class="p-3 rounded bg-slate-950/90 border border-slate-800">
@@ -82,7 +82,7 @@
                                 <p class="text-slate-200 mt-1">Raw operator speech transcribed with domain-specific industrial acoustic models.</p>
                             </div>
                             <div class="p-3 rounded bg-slate-950/90 border border-slate-800">
-                                <span class="text-cyan-400">2. Context Disambiguation:</span>
+                                <span class="text-amber-400">2. Context Disambiguation:</span>
                                 <p class="text-slate-200 mt-1">Contextual bindings match entity names ("turbine flange") to spatial CAD landmarks and active asset registries.</p>
                             </div>
                             <div class="p-3 rounded bg-slate-950/90 border border-slate-800">
@@ -103,7 +103,7 @@
                 <div class="glass-panel p-6 rounded-2xl border border-slate-800">
                     <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
                         <span>DETERMINISTIC_COMPILER</span>
-                        <span class="text-cyan-400">BUILD: RELEASE</span>
+                        <span class="text-amber-400">BUILD: RELEASE</span>
                     </div>
                     <div class="mt-4 p-4 rounded bg-slate-950/90 border border-slate-800 font-mono text-xs space-y-2 text-slate-300 overflow-x-auto">
                         <p class="text-slate-500">// Compiled Motion Primitive Graph</p>
@@ -119,7 +119,7 @@
             </div>
 
             <div class="lg:col-span-5 order-1 lg:order-2 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/80 border border-cyan-800 text-cyan-400 text-xs font-mono">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-950/80 border border-cyan-800 text-amber-400 text-xs font-mono">
                     Step 02 &bull; Deterministic Translation
                 </div>
                 <h2 class="text-3xl font-bold text-white">Compile</h2>
@@ -199,11 +199,11 @@
                 <div class="glass-panel p-6 rounded-2xl border border-slate-800">
                     <div class="flex items-center justify-between pb-3 border-b border-slate-800 text-xs font-mono text-slate-400">
                         <span>REALTIME_BUS_EXECUTION</span>
-                        <span class="text-cyan-400">1 kHz BUS RATE</span>
+                        <span class="text-amber-400">1 kHz BUS RATE</span>
                     </div>
                     <div class="mt-4 p-4 rounded bg-slate-950/90 border border-slate-800 font-mono text-xs space-y-2 text-slate-300">
                         <p class="text-slate-500">// Low-latency hardware dispatch</p>
-                        <p class="text-cyan-300">&gt; Authenticated cryptographic signature verified</p>
+                        <p class="text-amber-300">&gt; Authenticated cryptographic signature verified</p>
                         <p class="text-slate-300">&gt; Streaming to CANopen / EtherCAT / ROS 2 micro-controller bus</p>
                         <p class="text-emerald-400">&gt; Real-time observer loop: Delta error &lt; 0.04mm</p>
                         <p class="text-slate-400">&gt; Watchdog timer heartbeat: Active (0.8ms)</p>
@@ -212,7 +212,7 @@
             </div>
 
             <div class="lg:col-span-5 order-1 lg:order-2 space-y-4">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-cyan-950/80 border border-cyan-800 text-cyan-400 text-xs font-mono">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-amber-950/80 border border-cyan-800 text-amber-400 text-xs font-mono">
                     Step 04 &bull; Real-Time Actuation
                 </div>
                 <h2 class="text-3xl font-bold text-white">Deploy</h2>
@@ -231,7 +231,7 @@
 <section class="py-20 border-t border-slate-800/80 bg-slate-900/30">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
-            <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">Hardware Compatibility</span>
+            <span class="text-xs font-mono uppercase tracking-widest text-amber-400">Hardware Compatibility</span>
             <h2 class="text-3xl font-bold text-white">Deployed Across Physical Form Factors</h2>
             <p class="text-slate-400 text-sm sm:text-base">
                 From precision joint coordination on assembly lines to dynamic airspace geofencing in uncrewed flight.
@@ -239,7 +239,7 @@
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition duration-300 group">
+            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition duration-300 group">
                 <div class="h-44 overflow-hidden relative">
                     <img src="{{ asset('images/industrial-arm.jpg') }}" alt="Industrial Robotic Arm" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
@@ -261,7 +261,7 @@
                 </div>
             </div>
 
-            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-cyan-500/50 transition duration-300 group">
+            <div class="glass-panel rounded-xl overflow-hidden border border-slate-800 hover:border-amber-500/50 transition duration-300 group">
                 <div class="h-44 overflow-hidden relative">
                     <img src="{{ asset('images/mobile-robot.jpg') }}" alt="Autonomous Mobile Robot" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
@@ -303,7 +303,7 @@
                         <th class="py-4 px-4">Capability</th>
                         <th class="py-4 px-4 text-slate-400">Manual Scripting</th>
                         <th class="py-4 px-4 text-amber-400">Raw Unchecked LLM</th>
-                        <th class="py-4 px-4 text-cyan-400 font-bold bg-cyan-950/30 rounded-t-lg">Volant Safety Layer</th>
+                        <th class="py-4 px-4 text-amber-400 font-bold bg-amber-950/30 rounded-t-lg">Volant Safety Layer</th>
                     </tr>
                 </thead>
                 <tbody class="divide-y divide-slate-800/60 text-slate-300 text-xs sm:text-sm">
@@ -311,31 +311,31 @@
                         <td class="py-4 px-4 font-semibold text-white">Interface</td>
                         <td class="py-4 px-4">Manual code &amp; teach pendant</td>
                         <td class="py-4 px-4">Plain text</td>
-                        <td class="py-4 px-4 bg-cyan-950/30 text-cyan-300 font-semibold">Plain natural language</td>
+                        <td class="py-4 px-4 bg-amber-950/30 text-amber-300 font-semibold">Plain natural language</td>
                     </tr>
                     <tr>
                         <td class="py-4 px-4 font-semibold text-white">Determinism</td>
                         <td class="py-4 px-4">High (rigid)</td>
                         <td class="py-4 px-4 text-rose-400">Low (hallucination risk)</td>
-                        <td class="py-4 px-4 bg-cyan-950/30 text-emerald-300 font-semibold">100% Deterministic Primitives</td>
+                        <td class="py-4 px-4 bg-amber-950/30 text-emerald-300 font-semibold">100% Deterministic Primitives</td>
                     </tr>
                     <tr>
                         <td class="py-4 px-4 font-semibold text-white">Pre-motion Safety Check</td>
                         <td class="py-4 px-4">Manual human testing</td>
                         <td class="py-4 px-4 text-rose-400">None (direct action)</td>
-                        <td class="py-4 px-4 bg-cyan-950/30 text-emerald-300 font-semibold">Mathematical Invariant Barrier</td>
+                        <td class="py-4 px-4 bg-amber-950/30 text-emerald-300 font-semibold">Mathematical Invariant Barrier</td>
                     </tr>
                     <tr>
                         <td class="py-4 px-4 font-semibold text-white">Hardware Adaptability</td>
                         <td class="py-4 px-4">Proprietary per vendor</td>
                         <td class="py-4 px-4">Unconstrained</td>
-                        <td class="py-4 px-4 bg-cyan-950/30 text-cyan-300 font-semibold">Universal across arms, AMRs, UAVs</td>
+                        <td class="py-4 px-4 bg-amber-950/30 text-amber-300 font-semibold">Universal across arms, AMRs, UAVs</td>
                     </tr>
                     <tr>
                         <td class="py-4 px-4 font-semibold text-white">Operator Skill Threshold</td>
                         <td class="py-4 px-4">Robotics engineer required</td>
                         <td class="py-4 px-4">Low, but hazardous</td>
-                        <td class="py-4 px-4 bg-cyan-950/30 text-emerald-300 font-semibold">Accessible to any field operator</td>
+                        <td class="py-4 px-4 bg-amber-950/30 text-emerald-300 font-semibold">Accessible to any field operator</td>
                     </tr>
                 </tbody>
             </table>
@@ -343,7 +343,7 @@
 
         <div class="mt-14 text-center">
             <a href="{{ route('contact.create') }}" 
-               class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 rounded-lg shadow-lg shadow-cyan-500/20 transition-all">
+               class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 rounded-lg shadow-lg shadow-amber-500/20 transition-all">
                 <span>Discuss Your Deployment With Us</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>

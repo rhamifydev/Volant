@@ -23,14 +23,14 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto space-y-6">
             <!-- Badge -->
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-cyan-500/40 text-xs font-mono text-cyan-300 shadow-lg shadow-black/60 backdrop-blur-md">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-lg shadow-black/60 backdrop-blur-md">
                 <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
                 <span>Deterministic Safety Layer for Robots &amp; Drones</span>
             </div>
 
             <!-- Headline: Exact text required by prompt with drop-shadow for crystal legibility -->
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
-                Tell any robot or drone what to do in plain language. <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 bg-clip-text text-transparent">Verified before it moves.</span>
+                Tell any robot or drone what to do in plain language. <span class="bg-gradient-to-r from-amber-400 via-amber-300 to-orange-400 bg-clip-text text-transparent">Verified before it moves.</span>
             </h1>
 
             <!-- Subtext with shadow -->
@@ -41,7 +41,7 @@
             <!-- Actions -->
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                 <a href="{{ route('contact.create') }}" 
-                   class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 rounded-xl shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-950">
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 rounded-xl shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-950">
                     <span>Contact Us</span>
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -59,7 +59,7 @@
 
         <!-- Interactive Terminal Simulator -->
         <div class="mt-16 max-w-4xl mx-auto">
-            <div class="glass-panel rounded-2xl overflow-hidden shadow-2xl shadow-cyan-950/40 border border-slate-700/60">
+            <div class="glass-panel rounded-2xl overflow-hidden shadow-2xl shadow-amber-950/40 border border-slate-700/60">
                 <!-- Terminal Header Bar -->
                 <div class="bg-slate-900/90 px-4 py-3 border-b border-slate-800 flex flex-wrap items-center justify-between gap-3">
                     <div class="flex items-center gap-2">
@@ -73,7 +73,7 @@
 
                     <!-- Filter buttons to switch simulation robot type -->
                     <div class="flex items-center gap-1 text-xs" role="tablist" aria-label="Select simulation robot type">
-                        <button type="button" data-simulation-trigger="arm" class="px-2.5 py-1 rounded font-mono transition-colors bg-cyan-500/20 border border-cyan-400 text-cyan-300">
+                        <button type="button" data-simulation-trigger="arm" class="px-2.5 py-1 rounded font-mono transition-colors bg-amber-500/20 border border-amber-400 text-amber-300">
                             Arm
                         </button>
                         <button type="button" data-simulation-trigger="humanoid" class="px-2.5 py-1 rounded font-mono transition-colors bg-slate-800/60 border border-slate-700 text-slate-400 hover:text-slate-200">
@@ -92,7 +92,7 @@
                 <div class="p-6 font-mono text-xs sm:text-sm space-y-4 bg-slate-950/80">
                     <div>
                         <span class="text-slate-400">Target System:</span>
-                        <span id="sim-robot" class="text-cyan-400 font-bold ml-2">6-Axis Industrial Manipulator (UR10e / Fanuc)</span>
+                        <span id="sim-robot" class="text-amber-400 font-bold ml-2">6-Axis Industrial Manipulator (UR10e / Fanuc)</span>
                     </div>
 
                     <div class="p-3.5 rounded-lg bg-slate-900/60 border border-slate-800">
@@ -104,7 +104,7 @@
 
                     <div class="space-y-2">
                         <div class="flex items-start gap-2">
-                            <span class="text-cyan-400 font-semibold shrink-0">[2. COMPILE]</span>
+                            <span class="text-amber-400 font-semibold shrink-0">[2. COMPILE]</span>
                             <span id="sim-compile" class="text-slate-300 text-xs">
                                 TASK: trajectory_spline(p0-&gt;p_tray) -&gt; gripper_actuate(force=12N) -&gt; laser_inspect() -&gt; p_bin2
                             </span>
@@ -144,7 +144,7 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto space-y-4 mb-12 lg:mb-16">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-950/90 border border-cyan-500/40 text-xs font-mono text-cyan-300 shadow-lg shadow-black/60 backdrop-blur-md">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-lg shadow-black/60 backdrop-blur-md">
                 <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" aria-hidden="true"></span>
                 <span>Deterministic Motion In Action</span>
             </div>
@@ -160,7 +160,7 @@
 
         <!-- Video Player Frame -->
         <div class="max-w-5xl mx-auto">
-            <div class="relative rounded-2xl sm:rounded-3xl overflow-hidden glass-panel border border-slate-700/80 shadow-2xl shadow-cyan-950/50 group">
+            <div class="relative rounded-2xl sm:rounded-3xl overflow-hidden glass-panel border border-slate-700/80 shadow-2xl shadow-amber-950/50 group">
                 
                 <!-- Video Cockpit / Telemetry Header Bar -->
                 <div class="bg-slate-900/90 px-4 sm:px-6 py-3 border-b border-slate-800 flex flex-wrap items-center justify-between gap-3 text-xs font-mono text-slate-300">
@@ -175,7 +175,7 @@
                     </div>
 
                     <div class="flex items-center gap-3 text-[11px] sm:text-xs">
-                        <span id="video-barrier-badge" class="px-2 py-0.5 rounded bg-cyan-950/80 border border-cyan-500/40 text-cyan-300">
+                        <span id="video-barrier-badge" class="px-2 py-0.5 rounded bg-amber-950/80 border border-amber-500/40 text-amber-300">
                             Barrier: ACTIVE [0 Breaches]
                         </span>
                         <span class="hidden md:inline-block px-2 py-0.5 rounded bg-slate-800/80 border border-slate-700 text-slate-300">
@@ -208,7 +208,7 @@
                     <button 
                         type="button"
                         id="video-center-play-overlay"
-                        class="absolute inset-0 m-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-950/80 border-2 border-cyan-400 text-cyan-300 hover:scale-110 hover:bg-cyan-500/20 transition-all flex items-center justify-center backdrop-blur-md shadow-2xl shadow-cyan-500/50 hidden z-20 cursor-pointer"
+                        class="absolute inset-0 m-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-950/80 border-2 border-amber-400 text-amber-300 hover:scale-110 hover:bg-amber-500/20 transition-all flex items-center justify-center backdrop-blur-md shadow-2xl shadow-amber-500/50 hidden z-20 cursor-pointer"
                         aria-label="Click to start video"
                         title="Click to start video"
                     >
@@ -221,13 +221,13 @@
                     <div class="absolute inset-0 pointer-events-none bg-gradient-to-t from-slate-950/90 via-transparent to-slate-950/40" aria-hidden="true"></div>
 
                     <!-- Tech HUD Corner Reticles -->
-                    <div class="absolute top-4 left-4 w-6 h-6 border-t-2 border-l-2 border-cyan-400/60 pointer-events-none" aria-hidden="true"></div>
-                    <div class="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-cyan-400/60 pointer-events-none" aria-hidden="true"></div>
-                    <div class="absolute bottom-16 left-4 w-6 h-6 border-b-2 border-l-2 border-cyan-400/60 pointer-events-none" aria-hidden="true"></div>
-                    <div class="absolute bottom-16 right-4 w-6 h-6 border-b-2 border-r-2 border-cyan-400/60 pointer-events-none" aria-hidden="true"></div>
+                    <div class="absolute top-4 left-4 w-6 h-6 border-t-2 border-l-2 border-amber-400/60 pointer-events-none" aria-hidden="true"></div>
+                    <div class="absolute top-4 right-4 w-6 h-6 border-t-2 border-r-2 border-amber-400/60 pointer-events-none" aria-hidden="true"></div>
+                    <div class="absolute bottom-16 left-4 w-6 h-6 border-b-2 border-l-2 border-amber-400/60 pointer-events-none" aria-hidden="true"></div>
+                    <div class="absolute bottom-16 right-4 w-6 h-6 border-b-2 border-r-2 border-amber-400/60 pointer-events-none" aria-hidden="true"></div>
 
                     <!-- Live Dynamic HUD Telemetry Overlay -->
-                    <div id="video-hud-telemetry" class="absolute top-6 left-6 pointer-events-none hidden sm:block font-mono text-[11px] text-cyan-300/90 space-y-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
+                    <div id="video-hud-telemetry" class="absolute top-6 left-6 pointer-events-none hidden sm:block font-mono text-[11px] text-amber-300/90 space-y-1 drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
                         <div class="flex items-center gap-2">
                             <span class="text-slate-400">WAYPOINT:</span>
                             <span id="hud-waypoint" class="text-white font-bold">NYC-WP-14 &rarr; 5TH-AVE CORRIDOR</span>
@@ -238,7 +238,7 @@
                         </div>
                         <div class="flex items-center gap-2">
                             <span class="text-slate-400">KINEMATIC DRIFT:</span>
-                            <span id="hud-drift" class="text-cyan-300">&plusmn;0.002 rad/s</span>
+                            <span id="hud-drift" class="text-amber-300">&plusmn;0.002 rad/s</span>
                         </div>
                     </div>
 
@@ -250,7 +250,7 @@
 
                     <!-- Auto-Rotation 15s Progress Line (Above control bar) -->
                     <div class="absolute bottom-14 left-0 right-0 h-1 bg-slate-800/80 overflow-hidden pointer-events-none" title="Feed switches automatically every 15 seconds">
-                        <div id="rotation-progress-bar" class="h-full bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 w-0 transition-all duration-100 ease-linear"></div>
+                        <div id="rotation-progress-bar" class="h-full bg-gradient-to-r from-amber-400 via-amber-300 to-orange-400 w-0 transition-all duration-100 ease-linear"></div>
                     </div>
 
                     <!-- Control Bar Overlay (Accessible & Modern) -->
@@ -261,7 +261,7 @@
                             <button 
                                 type="button" 
                                 id="video-play-btn" 
-                                class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 transition focus:outline-none focus:ring-2 focus:ring-cyan-400 cursor-pointer"
+                                class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 transition focus:outline-none focus:ring-2 focus:ring-amber-400 cursor-pointer"
                                 aria-label="Pause auto play video"
                                 title="Pause / Play"
                             >
@@ -279,7 +279,7 @@
                             <button 
                                 type="button" 
                                 id="video-mute-btn" 
-                                class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 transition focus:outline-none focus:ring-2 focus:ring-cyan-400 cursor-pointer"
+                                class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 transition focus:outline-none focus:ring-2 focus:ring-amber-400 cursor-pointer"
                                 aria-label="Unmute video audio"
                                 title="Mute / Unmute"
                             >
@@ -288,7 +288,7 @@
                                     <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
                                 </svg>
                                 <!-- Unmuted Icon (Hidden initially) -->
-                                <svg id="video-unmuted-icon" class="w-4 h-4 hidden text-cyan-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <svg id="video-unmuted-icon" class="w-4 h-4 hidden text-amber-400" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
                                 </svg>
                             </button>
@@ -305,13 +305,13 @@
                             <div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-slate-900/90 border border-slate-700/80 text-[11px] font-mono text-slate-300">
                                 <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span>
                                 <span>Cycle: </span>
-                                <span id="rotation-countdown" class="text-cyan-300 font-bold">15s</span>
+                                <span id="rotation-countdown" class="text-amber-300 font-bold">15s</span>
                             </div>
 
                             <button 
                                 type="button" 
                                 id="video-fullscreen-btn" 
-                                class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 transition focus:outline-none focus:ring-2 focus:ring-cyan-400 cursor-pointer"
+                                class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-slate-800/90 hover:bg-slate-700 text-slate-200 hover:text-white border border-slate-700 transition focus:outline-none focus:ring-2 focus:ring-amber-400 cursor-pointer"
                                 aria-label="Toggle video fullscreen"
                                 title="Toggle Fullscreen"
                             >
@@ -327,7 +327,7 @@
                 <div class="bg-slate-900/60 p-4 sm:p-6 border-t border-slate-800 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
                     <div class="flex items-center gap-2 text-xs font-mono text-slate-400">
                         <span class="text-slate-500">Camera Source:</span>
-                        <span id="video-active-feed-title" class="text-cyan-400 font-semibold">Feed 01: Autonomous Drone Fleet // City Airspace Navigation</span>
+                        <span id="video-active-feed-title" class="text-amber-400 font-semibold">Feed 01: Autonomous Drone Fleet // City Airspace Navigation</span>
                     </div>
 
                     <!-- 4 Interactive Tabs -->
@@ -336,7 +336,7 @@
                         <button 
                             type="button" 
                             data-video-feed-btn="drone" 
-                            class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono transition-all bg-cyan-500/20 border border-cyan-400 text-cyan-300 shadow-md shadow-cyan-500/20 cursor-pointer"
+                            class="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-xs font-mono transition-all bg-amber-500/20 border border-amber-400 text-amber-300 shadow-md shadow-amber-500/20 cursor-pointer"
                             aria-selected="true"
                         >
                             <span class="w-2 h-2 rounded-full bg-cyan-400 feed-active-indicator" aria-hidden="true"></span>
@@ -381,8 +381,8 @@
 
             <!-- Supporting Value Metric Grid Below Video -->
             <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-                <div class="glass-panel p-5 rounded-xl border border-slate-800/80 hover:border-cyan-500/40 transition">
-                    <div class="flex items-center gap-2 text-cyan-400 font-mono text-xs mb-2">
+                <div class="glass-panel p-5 rounded-xl border border-slate-800/80 hover:border-amber-500/40 transition">
+                    <div class="flex items-center gap-2 text-amber-400 font-mono text-xs mb-2">
                         <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                         </svg>
@@ -405,8 +405,8 @@
                     </p>
                 </div>
 
-                <div class="glass-panel p-5 rounded-xl border border-slate-800/80 hover:border-cyan-500/40 transition">
-                    <div class="flex items-center gap-2 text-cyan-400 font-mono text-xs mb-2">
+                <div class="glass-panel p-5 rounded-xl border border-slate-800/80 hover:border-amber-500/40 transition">
+                    <div class="flex items-center gap-2 text-amber-400 font-mono text-xs mb-2">
                         <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
                         </svg>
@@ -425,7 +425,7 @@
 <section id="how-it-works" class="py-24 bg-slate-950/60 border-y border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto space-y-4">
-            <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">System Architecture</span>
+            <span class="text-xs font-mono uppercase tracking-widest text-amber-400">System Architecture</span>
             <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">
                 The Four-Step Safety Pipeline
             </h2>
@@ -436,11 +436,11 @@
 
         <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <!-- Step 1: Describe -->
-            <button type="button" data-step-tab="1" class="step-tab-btn text-left glass-panel p-6 rounded-2xl relative flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 border-cyan-400 shadow-lg shadow-cyan-500/10 cursor-pointer w-full focus:outline-none focus:ring-2 focus:ring-cyan-400">
+            <button type="button" data-step-tab="1" class="step-tab-btn text-left glass-panel p-6 rounded-2xl relative flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 border-amber-400 shadow-lg shadow-amber-500/10 cursor-pointer w-full focus:outline-none focus:ring-2 focus:ring-amber-400">
                 <div>
                     <div class="flex items-center justify-between mb-5">
-                        <span class="step-num text-2xl font-bold font-mono text-cyan-400">01</span>
-                        <div class="w-10 h-10 rounded-lg bg-cyan-950/80 border border-cyan-800 flex items-center justify-center text-cyan-400">
+                        <span class="step-num text-2xl font-bold font-mono text-amber-400">01</span>
+                        <div class="w-10 h-10 rounded-lg bg-amber-950/80 border border-cyan-800 flex items-center justify-center text-amber-400">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                             </svg>
@@ -451,18 +451,18 @@
                         The operator expresses the mission in ordinary human language — through text or speech. No proprietary coding languages or teach pendants required.
                     </p>
                 </div>
-                <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-cyan-400 font-mono flex items-center justify-between">
+                <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-amber-400 font-mono flex items-center justify-between">
                     <span>Input: Natural language</span>
-                    <span class="step-active-tag text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">Active</span>
+                    <span class="step-active-tag text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">Active</span>
                 </div>
             </button>
 
             <!-- Step 2: Compile -->
-            <button type="button" data-step-tab="2" class="step-tab-btn text-left glass-panel p-6 rounded-2xl relative flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 border-slate-800 cursor-pointer w-full focus:outline-none focus:ring-2 focus:ring-cyan-400">
+            <button type="button" data-step-tab="2" class="step-tab-btn text-left glass-panel p-6 rounded-2xl relative flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 border-slate-800 cursor-pointer w-full focus:outline-none focus:ring-2 focus:ring-amber-400">
                 <div>
                     <div class="flex items-center justify-between mb-5">
                         <span class="step-num text-2xl font-bold font-mono text-slate-400">02</span>
-                        <div class="w-10 h-10 rounded-lg bg-cyan-950/80 border border-cyan-800 flex items-center justify-center text-cyan-400">
+                        <div class="w-10 h-10 rounded-lg bg-amber-950/80 border border-cyan-800 flex items-center justify-center text-amber-400">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                             </svg>
@@ -475,12 +475,12 @@
                 </div>
                 <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 font-mono flex items-center justify-between">
                     <span>Output: Action graphs</span>
-                    <span class="step-active-tag hidden text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">Active</span>
+                    <span class="step-active-tag hidden text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">Active</span>
                 </div>
             </button>
 
             <!-- Step 3: Verify -->
-            <button type="button" data-step-tab="3" class="step-tab-btn text-left glass-panel p-6 rounded-2xl relative flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 border-slate-800 cursor-pointer w-full focus:outline-none focus:ring-2 focus:ring-cyan-400">
+            <button type="button" data-step-tab="3" class="step-tab-btn text-left glass-panel p-6 rounded-2xl relative flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 border-slate-800 cursor-pointer w-full focus:outline-none focus:ring-2 focus:ring-amber-400">
                 <div>
                     <div class="flex items-center justify-between mb-5">
                         <span class="step-num text-2xl font-bold font-mono text-slate-400">03</span>
@@ -497,16 +497,16 @@
                 </div>
                 <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 font-mono flex items-center justify-between">
                     <span>Check: 100% Pre-motion barrier</span>
-                    <span class="step-active-tag hidden text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">Active</span>
+                    <span class="step-active-tag hidden text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">Active</span>
                 </div>
             </button>
 
             <!-- Step 4: Deploy -->
-            <button type="button" data-step-tab="4" class="step-tab-btn text-left glass-panel p-6 rounded-2xl relative flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 border-slate-800 cursor-pointer w-full focus:outline-none focus:ring-2 focus:ring-cyan-400">
+            <button type="button" data-step-tab="4" class="step-tab-btn text-left glass-panel p-6 rounded-2xl relative flex flex-col justify-between group transition-all duration-300 hover:-translate-y-1 border-slate-800 cursor-pointer w-full focus:outline-none focus:ring-2 focus:ring-amber-400">
                 <div>
                     <div class="flex items-center justify-between mb-5">
                         <span class="step-num text-2xl font-bold font-mono text-slate-400">04</span>
-                        <div class="w-10 h-10 rounded-lg bg-cyan-950/80 border border-cyan-800 flex items-center justify-center text-cyan-400">
+                        <div class="w-10 h-10 rounded-lg bg-amber-950/80 border border-cyan-800 flex items-center justify-center text-amber-400">
                             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
@@ -519,16 +519,16 @@
                 </div>
                 <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 font-mono flex items-center justify-between">
                     <span>Dispatch: Low-latency motor execution</span>
-                    <span class="step-active-tag hidden text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">Active</span>
+                    <span class="step-active-tag hidden text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40">Active</span>
                 </div>
             </button>
         </div>
 
         <!-- Interactive Step Deep-Dive Inspector Drawer -->
-        <div id="step-inspector-drawer" class="mt-10 rounded-2xl glass-panel border border-cyan-500/40 p-6 sm:p-8 bg-slate-950/90 shadow-2xl relative overflow-hidden transition-all duration-300">
+        <div id="step-inspector-drawer" class="mt-10 rounded-2xl glass-panel border border-amber-500/40 p-6 sm:p-8 bg-slate-950/90 shadow-2xl relative overflow-hidden transition-all duration-300">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-5 border-b border-slate-800">
                 <div class="flex items-center gap-3">
-                    <span id="step-inspector-number" class="w-9 h-9 rounded-lg bg-cyan-500/20 border border-cyan-400 text-cyan-300 font-mono font-bold flex items-center justify-center text-sm">01</span>
+                    <span id="step-inspector-number" class="w-9 h-9 rounded-lg bg-amber-500/20 border border-amber-400 text-amber-300 font-mono font-bold flex items-center justify-center text-sm">01</span>
                     <div>
                         <h4 id="step-inspector-title" class="text-lg font-bold text-white">Step 01: Natural Language Semantic Ingestion</h4>
                         <p id="step-inspector-desc" class="text-xs text-slate-400 font-mono">Transforms raw operator voice or prompt into unambiguous semantic task primitives.</p>
@@ -536,7 +536,7 @@
                 </div>
                 <div class="flex items-center gap-3">
                     <span class="text-xs font-mono text-slate-500">FORMAT:</span>
-                    <span id="step-inspector-format" class="px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-xs font-mono text-cyan-300">Semantic AST (JSON)</span>
+                    <span id="step-inspector-format" class="px-2.5 py-1 rounded bg-slate-900 border border-slate-700 text-xs font-mono text-amber-300">Semantic AST (JSON)</span>
                 </div>
             </div>
 
@@ -544,7 +544,7 @@
             <div class="mt-5 relative">
                 <div class="flex items-center justify-between px-4 py-2 bg-slate-900 border-t border-x border-slate-800 rounded-t-lg text-xs font-mono text-slate-400">
                     <span id="step-inspector-filename">pipeline/ingest/semantic_ast.json</span>
-                    <button type="button" id="step-copy-btn" class="text-cyan-400 hover:text-cyan-300 transition flex items-center gap-1 cursor-pointer">
+                    <button type="button" id="step-copy-btn" class="text-amber-400 hover:text-amber-300 transition flex items-center gap-1 cursor-pointer">
                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                         <span id="step-copy-text">Copy Code</span>
                     </button>
@@ -571,7 +571,7 @@
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                     <span>Deterministic Compiler: Munich Verification Node v2.4</span>
                 </span>
-                <span class="text-cyan-400">Click steps 01–04 above to inspect live pipeline data &rarr;</span>
+                <span class="text-amber-400">Click steps 01–04 above to inspect live pipeline data &rarr;</span>
             </div>
         </div>
     </div>
@@ -586,7 +586,7 @@
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto space-y-4 mb-14">
-            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-cyan-500/40 text-xs font-mono text-cyan-300 shadow-xl backdrop-blur-md">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-950/90 border border-amber-500/40 text-xs font-mono text-amber-300 shadow-xl backdrop-blur-md">
                 <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping" aria-hidden="true"></span>
                 <span>Interactive Verification Sandbox</span>
             </div>
@@ -607,7 +607,7 @@
                 <div class="glass-panel p-5 rounded-2xl border border-slate-800">
                     <span class="text-xs font-mono text-slate-400 uppercase tracking-wider block mb-3">1. Select Machine Architecture</span>
                     <div class="grid grid-cols-3 gap-2" role="group" aria-label="Machine Architecture Selection">
-                        <button type="button" data-canvas-robot="arm" class="canvas-robot-btn px-3 py-2.5 rounded-xl text-xs font-mono border transition-all flex flex-col items-center gap-1.5 bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-md shadow-cyan-500/20 cursor-pointer">
+                        <button type="button" data-canvas-robot="arm" class="canvas-robot-btn px-3 py-2.5 rounded-xl text-xs font-mono border transition-all flex flex-col items-center gap-1.5 bg-amber-500/20 border-amber-400 text-amber-300 shadow-md shadow-amber-500/20 cursor-pointer">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
                             <span>6-Axis Arm</span>
                         </button>
@@ -626,7 +626,7 @@
                 <div class="glass-panel p-5 rounded-2xl border border-slate-800 space-y-3">
                     <div class="flex items-center justify-between">
                         <span class="text-xs font-mono text-slate-400 uppercase tracking-wider">2. Natural Language Directive</span>
-                        <span class="text-[10px] font-mono text-cyan-400">Live Parser</span>
+                        <span class="text-[10px] font-mono text-amber-400">Live Parser</span>
                     </div>
                     
                     <div class="relative">
@@ -634,7 +634,7 @@
                             type="text" 
                             id="canvas-prompt-input" 
                             value="Solder circuit seam B4 with 0.5mm precision and return to home position" 
-                            class="w-full px-4 py-3 rounded-xl bg-slate-950/90 border border-slate-700 text-sm text-white font-mono focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 pr-10 shadow-inner"
+                            class="w-full px-4 py-3 rounded-xl bg-slate-950/90 border border-slate-700 text-sm text-white font-mono focus:outline-none focus:border-amber-400 focus:ring-1 focus:ring-amber-400 pr-10 shadow-inner"
                             placeholder="Type a plain-language command..."
                         >
                         <div class="absolute right-3 top-3.5 text-slate-500">
@@ -646,13 +646,13 @@
                     <div class="space-y-1.5 pt-1">
                         <span class="text-[11px] font-mono text-slate-500">Quick Test Directives:</span>
                         <div class="flex flex-wrap gap-1.5">
-                            <button type="button" data-prompt-preset="Solder circuit seam B4 with 0.5mm precision and return to home position" class="prompt-preset-chip text-[11px] font-mono px-2.5 py-1 rounded bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-cyan-300 transition cursor-pointer">
+                            <button type="button" data-prompt-preset="Solder circuit seam B4 with 0.5mm precision and return to home position" class="prompt-preset-chip text-[11px] font-mono px-2.5 py-1 rounded bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-amber-300 transition cursor-pointer">
                                 Solder PCB Seam
                             </button>
-                            <button type="button" data-prompt-preset="Inspect high-voltage transmission flange at 25m avoiding no-fly zone" class="prompt-preset-chip text-[11px] font-mono px-2.5 py-1 rounded bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-cyan-300 transition cursor-pointer">
+                            <button type="button" data-prompt-preset="Inspect high-voltage transmission flange at 25m avoiding no-fly zone" class="prompt-preset-chip text-[11px] font-mono px-2.5 py-1 rounded bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-amber-300 transition cursor-pointer">
                                 Inspect Turbine Flange
                             </button>
-                            <button type="button" data-prompt-preset="Transport 22kg battery pack across aisle 4 avoiding pedestrian buffer" class="prompt-preset-chip text-[11px] font-mono px-2.5 py-1 rounded bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-cyan-300 transition cursor-pointer">
+                            <button type="button" data-prompt-preset="Transport 22kg battery pack across aisle 4 avoiding pedestrian buffer" class="prompt-preset-chip text-[11px] font-mono px-2.5 py-1 rounded bg-slate-900/80 hover:bg-slate-800 border border-slate-700 text-slate-300 hover:text-amber-300 transition cursor-pointer">
                                 Heavy Battery Transport
                             </button>
                         </div>
@@ -667,9 +667,9 @@
                     <div class="space-y-1.5">
                         <div class="flex justify-between text-xs font-mono">
                             <span class="text-slate-300">Tool Velocity:</span>
-                            <span id="slider-speed-val" class="text-cyan-300 font-bold">1.2 m/s</span>
+                            <span id="slider-speed-val" class="text-amber-300 font-bold">1.2 m/s</span>
                         </div>
-                        <input type="range" id="slider-speed" min="0.3" max="3.5" step="0.1" value="1.2" class="w-full accent-cyan-400 bg-slate-800 h-2 rounded-lg cursor-pointer">
+                        <input type="range" id="slider-speed" min="0.3" max="3.5" step="0.1" value="1.2" class="w-full accent-amber-400 bg-slate-800 h-2 rounded-lg cursor-pointer">
                         <div class="flex justify-between text-[10px] font-mono text-slate-500">
                             <span>0.3 m/s (Creep)</span>
                             <span class="text-amber-400">&gt; 2.5 m/s Hazard Zone</span>
@@ -681,9 +681,9 @@
                     <div class="space-y-1.5">
                         <div class="flex justify-between text-xs font-mono">
                             <span class="text-slate-300">Payload Mass:</span>
-                            <span id="slider-payload-val" class="text-cyan-300 font-bold">8.0 kg</span>
+                            <span id="slider-payload-val" class="text-amber-300 font-bold">8.0 kg</span>
                         </div>
-                        <input type="range" id="slider-payload" min="1" max="35" step="1" value="8" class="w-full accent-cyan-400 bg-slate-800 h-2 rounded-lg cursor-pointer">
+                        <input type="range" id="slider-payload" min="1" max="35" step="1" value="8" class="w-full accent-amber-400 bg-slate-800 h-2 rounded-lg cursor-pointer">
                         <div class="flex justify-between text-[10px] font-mono text-slate-500">
                             <span>1 kg (Light)</span>
                             <span class="text-amber-400">&gt; 25 kg Torque Limit</span>
@@ -713,13 +713,13 @@
                         <span id="btn-inject-obstacle-text">Inject Path Hazard</span>
                     </button>
 
-                    <button type="button" id="btn-run-sim" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 text-slate-950 text-xs font-mono font-bold transition shadow-lg shadow-cyan-500/25 cursor-pointer">
+                    <button type="button" id="btn-run-sim" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-slate-950 text-xs font-mono font-bold transition shadow-lg shadow-amber-500/25 cursor-pointer">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         <span>Re-Verify Trajectory</span>
                     </button>
 
-                    <button type="button" id="btn-audio-toggle" class="px-3.5 py-3 rounded-xl border border-slate-700 bg-slate-900 text-slate-400 hover:text-cyan-300 text-xs font-mono transition cursor-pointer" title="Toggle audio feedback synthesizer" aria-label="Toggle audio effects">
-                        <svg id="audio-icon-on" class="w-4 h-4 hidden text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+                    <button type="button" id="btn-audio-toggle" class="px-3.5 py-3 rounded-xl border border-slate-700 bg-slate-900 text-slate-400 hover:text-amber-300 text-xs font-mono transition cursor-pointer" title="Toggle audio feedback synthesizer" aria-label="Toggle audio effects">
+                        <svg id="audio-icon-on" class="w-4 h-4 hidden text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
                         <svg id="audio-icon-off" class="w-4 h-4 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15zM17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"/></svg>
                     </button>
                 </div>
@@ -736,7 +736,7 @@
                             <span id="canvas-status-badge" class="font-bold text-emerald-400 uppercase tracking-wider">BARRIER: VERIFIED [SAFE]</span>
                         </div>
                         <div class="flex items-center gap-4 text-slate-400">
-                            <span>Latency: <strong id="canvas-hud-latency" class="text-cyan-300">2.1ms</strong></span>
+                            <span>Latency: <strong id="canvas-hud-latency" class="text-amber-300">2.1ms</strong></span>
                             <span>Kinetic Energy: <strong id="canvas-hud-energy" class="text-white">5.76 J</strong></span>
                         </div>
                     </div>
@@ -746,7 +746,7 @@
                         <canvas id="kinematic-canvas" class="w-full h-full block cursor-crosshair"></canvas>
 
                         <!-- Reticle Overlays -->
-                        <div class="absolute top-3 left-3 text-[10px] font-mono text-cyan-400/80 pointer-events-none">
+                        <div class="absolute top-3 left-3 text-[10px] font-mono text-amber-400/80 pointer-events-none">
                             COORD GRID: <span id="canvas-coords">X: +0.420 Y: +0.285 Z: +0.110</span>
                         </div>
                         <div class="absolute bottom-3 left-3 text-[10px] font-mono text-slate-500 pointer-events-none">
@@ -772,7 +772,7 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] pt-1">
                             <div>
                                 <span class="text-slate-500">Control Barrier Eq:</span>
-                                <span id="math-cbf" class="text-cyan-300 font-semibold block">h(x) = &nabla;h &bull; f(x) &ge; -&gamma;(h) [+0.482 &ge; 0]</span>
+                                <span id="math-cbf" class="text-amber-300 font-semibold block">h(x) = &nabla;h &bull; f(x) &ge; -&gamma;(h) [+0.482 &ge; 0]</span>
                             </div>
                             <div>
                                 <span class="text-slate-500">Torque Matrix:</span>
@@ -801,7 +801,7 @@
 
         <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- 1. Industrial Arms -->
-            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
+            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
                 <div>
                     <div class="relative w-full h-52 sm:h-64 overflow-hidden">
                         <img src="{{ asset('images/industrial-arm.jpg') }}" 
@@ -811,7 +811,7 @@
                              loading="lazy" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-cyan-300 border border-cyan-800/60 backdrop-blur-md">
+                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-amber-300 border border-cyan-800/60 backdrop-blur-md">
                             Kinematic Safety
                         </span>
                     </div>
@@ -840,7 +840,7 @@
                 </div>
                 <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800/80 pt-4">
                     <span>Use Case: Precision Assembly &amp; Handling</span>
-                    <a href="{{ route('product') }}" class="text-cyan-400 hover:text-cyan-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
+                    <a href="{{ route('product') }}" class="text-amber-400 hover:text-amber-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
                 </div>
             </div>
 
@@ -889,7 +889,7 @@
             </div>
 
             <!-- 3. Mobile Robots -->
-            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
+            <div class="glass-panel rounded-2xl border border-slate-800 hover:border-amber-500/40 transition duration-300 flex flex-col justify-between overflow-hidden group">
                 <div>
                     <div class="relative w-full h-52 sm:h-64 overflow-hidden">
                         <img src="{{ asset('images/mobile-robot.jpg') }}" 
@@ -899,7 +899,7 @@
                              loading="lazy" 
                              class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
-                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-cyan-300 border border-cyan-800/60 backdrop-blur-md">
+                        <span class="absolute top-4 right-4 text-xs font-mono px-2.5 py-1 rounded-md bg-slate-950/80 text-amber-300 border border-cyan-800/60 backdrop-blur-md">
                             Navigation Bounds
                         </span>
                     </div>
@@ -928,7 +928,7 @@
                 </div>
                 <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 flex items-center justify-between text-xs text-slate-400 border-t border-slate-800/80 pt-4">
                     <span>Use Case: Warehouse Logistics &amp; Transport</span>
-                    <a href="{{ route('product') }}" class="text-cyan-400 hover:text-cyan-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
+                    <a href="{{ route('product') }}" class="text-amber-400 hover:text-amber-300 font-semibold inline-flex items-center gap-1">Details &rarr;</a>
                 </div>
             </div>
 
@@ -987,7 +987,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <!-- Section Header -->
         <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
-            <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">Enterprise Value Model</span>
+            <span class="text-xs font-mono uppercase tracking-widest text-amber-400">Enterprise Value Model</span>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
                 Fleet Safety &amp; Operational ROI Calculator
             </h2>
@@ -1006,9 +1006,9 @@
                     <div class="space-y-2">
                         <div class="flex justify-between items-center text-sm font-mono">
                             <span class="text-slate-200 font-semibold">Active Fleet Size:</span>
-                            <span id="roi-fleet-display" class="px-3 py-1 rounded-md bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 font-bold">25 Robots</span>
+                            <span id="roi-fleet-display" class="px-3 py-1 rounded-md bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">25 Robots</span>
                         </div>
-                        <input type="range" id="roi-fleet-slider" min="1" max="250" step="1" value="25" class="w-full accent-cyan-400 bg-slate-800 h-2.5 rounded-lg cursor-pointer">
+                        <input type="range" id="roi-fleet-slider" min="1" max="250" step="1" value="25" class="w-full accent-amber-400 bg-slate-800 h-2.5 rounded-lg cursor-pointer">
                         <div class="flex justify-between text-xs font-mono text-slate-500">
                             <span>1 pilot unit</span>
                             <span>50 units</span>
@@ -1023,7 +1023,7 @@
                             <button type="button" data-shift-btn="1" class="roi-shift-btn px-3 py-2 rounded-xl text-xs font-mono border transition-all bg-slate-900 border-slate-700 text-slate-400 hover:text-slate-200 cursor-pointer">
                                 1 Shift (8h/day)
                             </button>
-                            <button type="button" data-shift-btn="2" class="roi-shift-btn px-3 py-2 rounded-xl text-xs font-mono border transition-all bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-md shadow-cyan-500/10 cursor-pointer font-bold">
+                            <button type="button" data-shift-btn="2" class="roi-shift-btn px-3 py-2 rounded-xl text-xs font-mono border transition-all bg-amber-500/20 border-amber-400 text-amber-300 shadow-md shadow-amber-500/10 cursor-pointer font-bold">
                                 2 Shifts (16h/day)
                             </button>
                             <button type="button" data-shift-btn="3" class="roi-shift-btn px-3 py-2 rounded-xl text-xs font-mono border transition-all bg-slate-900 border-slate-700 text-slate-400 hover:text-slate-200 cursor-pointer">
@@ -1036,9 +1036,9 @@
                     <div class="space-y-2">
                         <div class="flex justify-between items-center text-sm font-mono">
                             <span class="text-slate-200 font-semibold">Task &amp; Mission Changes / Month:</span>
-                            <span id="roi-changes-display" class="px-3 py-1 rounded-md bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 font-bold">18 missions</span>
+                            <span id="roi-changes-display" class="px-3 py-1 rounded-md bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">18 missions</span>
                         </div>
-                        <input type="range" id="roi-changes-slider" min="2" max="60" step="1" value="18" class="w-full accent-cyan-400 bg-slate-800 h-2.5 rounded-lg cursor-pointer">
+                        <input type="range" id="roi-changes-slider" min="2" max="60" step="1" value="18" class="w-full accent-amber-400 bg-slate-800 h-2.5 rounded-lg cursor-pointer">
                         <div class="flex justify-between text-xs font-mono text-slate-500">
                             <span>2 (Infrequent)</span>
                             <span>18 (Moderate)</span>
@@ -1050,9 +1050,9 @@
                     <div class="space-y-2">
                         <div class="flex justify-between items-center text-sm font-mono">
                             <span class="text-slate-200 font-semibold">Blended Robotics Engineer Rate:</span>
-                            <span id="roi-rate-display" class="px-3 py-1 rounded-md bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 font-bold">$125 / hr</span>
+                            <span id="roi-rate-display" class="px-3 py-1 rounded-md bg-amber-950/80 border border-amber-500/40 text-amber-300 font-bold">$125 / hr</span>
                         </div>
-                        <input type="range" id="roi-rate-slider" min="60" max="220" step="5" value="125" class="w-full accent-cyan-400 bg-slate-800 h-2.5 rounded-lg cursor-pointer">
+                        <input type="range" id="roi-rate-slider" min="60" max="220" step="5" value="125" class="w-full accent-amber-400 bg-slate-800 h-2.5 rounded-lg cursor-pointer">
                         <div class="flex justify-between text-xs font-mono text-slate-500">
                             <span>$60 / hr</span>
                             <span>$125 / hr (Average)</span>
@@ -1083,7 +1083,7 @@
                     <div class="grid grid-cols-2 gap-4 pt-6 border-t border-slate-800">
                         <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
                             <span class="text-xs font-mono text-slate-400 block mb-1">Hours Saved / Month</span>
-                            <span id="roi-hours-saved" class="text-2xl font-bold font-mono text-cyan-400">225 hrs</span>
+                            <span id="roi-hours-saved" class="text-2xl font-bold font-mono text-amber-400">225 hrs</span>
                             <span class="text-[11px] font-mono text-slate-500 block mt-0.5">Across entire fleet</span>
                         </div>
 
@@ -1101,14 +1101,14 @@
 
                         <div class="p-4 rounded-xl bg-slate-950/80 border border-slate-800">
                             <span class="text-xs font-mono text-slate-400 block mb-1">Payback Period</span>
-                            <span id="roi-payback" class="text-lg font-bold font-mono text-cyan-400">&lt; 2.4 Months</span>
+                            <span id="roi-payback" class="text-lg font-bold font-mono text-amber-400">&lt; 2.4 Months</span>
                             <span class="text-[11px] font-mono text-slate-500 block mt-0.5">High operational IRR</span>
                         </div>
                     </div>
 
                     <div class="mt-6 pt-5 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
                         <span class="text-xs font-mono text-slate-400">Ready to pilot on your hardware?</span>
-                        <a href="{{ route('contact.create') }}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-mono font-bold text-slate-950 bg-gradient-to-r from-cyan-400 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 rounded-lg shadow-md transition">
+                        <a href="{{ route('contact.create') }}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-mono font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 rounded-lg shadow-md transition">
                             <span>Request Pilot Simulation &rarr;</span>
                         </a>
                     </div>
@@ -1121,7 +1121,7 @@
 <!-- Call to Action Banner -->
 <section class="py-20 relative overflow-hidden bg-gradient-to-b from-[#080c14] via-slate-900/90 to-[#080c14] border-t border-slate-800/80">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-        <span class="text-xs font-mono uppercase tracking-widest text-cyan-400">Deploy Plain-Language Control</span>
+        <span class="text-xs font-mono uppercase tracking-widest text-amber-400">Deploy Plain-Language Control</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
             Ready to bring certified plain-language commands to your machines?
         </h2>
@@ -1130,7 +1130,7 @@
         </p>
         <div class="pt-4">
             <a href="{{ route('contact.create') }}" 
-               class="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-slate-950 bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 rounded-xl shadow-xl shadow-cyan-500/25 transition-all focus:outline-none focus:ring-2 focus:ring-cyan-400">
+               class="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-orange-400 hover:from-amber-300 hover:to-orange-400 rounded-xl shadow-xl shadow-amber-500/25 transition-all focus:outline-none focus:ring-2 focus:ring-amber-400">
                 <span>Contact Our Munich Engineering Team</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
