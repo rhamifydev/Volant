@@ -30,7 +30,7 @@
 
             <!-- Headline: Exact text required by prompt with drop-shadow for crystal legibility -->
             <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight drop-shadow-[0_4px_16px_rgba(0,0,0,0.85)]">
-                Tell any robot or drone what to do in plain language. <span class="bg-gradient-to-r from-[#F3EDE1] via-[#E5A352] to-[#C8893A] bg-clip-text text-transparent">Verified before it moves.</span>
+                Tell any robot or drone what to do in plain language. <span class="text-amber-400">Verified before it moves.</span>
             </h1>
 
             <!-- Subtext with shadow -->
@@ -41,7 +41,7 @@
             <!-- Actions -->
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                 <a href="{{ route('contact.create') }}" 
-                   class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 rounded-xl shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-950">
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl shadow-md transition-all focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-950">
                     <span>Contact Us</span>
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -136,7 +136,7 @@
 </section>
 
 <!-- Autonomous Execution Video Demonstration Section -->
-<section id="live-demo" class="relative py-20 lg:py-28 overflow-hidden bg-gradient-to-b from-[#09090b] via-slate-950/90 to-[#09090b] border-t border-slate-800/80">
+<section id="live-demo" class="relative py-20 lg:py-28 overflow-hidden bg-[#09090b] border-t border-slate-800/80">
     <!-- Ambient Radial Glows -->
     <div class="absolute inset-0 pointer-events-none glow-radial-amber opacity-70" aria-hidden="true"></div>
     <div class="absolute inset-0 pointer-events-none glow-radial-gold opacity-60" aria-hidden="true"></div>
@@ -250,7 +250,7 @@
 
                     <!-- Auto-Rotation 15s Progress Line (Above control bar) -->
                     <div class="absolute bottom-14 left-0 right-0 h-1 bg-slate-800/80 overflow-hidden pointer-events-none" title="Feed switches automatically every 15 seconds">
-                        <div id="rotation-progress-bar" class="h-full bg-gradient-to-r from-amber-400 via-amber-300 to-orange-400 w-0 transition-all duration-100 ease-linear"></div>
+                        <div id="rotation-progress-bar" class="h-full bg-amber-400 w-0 transition-all duration-100 ease-linear"></div>
                     </div>
 
                     <!-- Control Bar Overlay (Accessible & Modern) -->
@@ -578,7 +578,7 @@
 </section>
 
 <!-- Interactive Kinematic Trajectory & Safety Envelope Sandbox -->
-<section id="interactive-simulator" class="py-24 relative overflow-hidden bg-gradient-to-b from-[#09090b] via-slate-950/95 to-[#09090b] border-b border-slate-800/80">
+<section id="interactive-simulator" class="py-24 relative overflow-hidden bg-[#09090b] border-b border-slate-800/80">
     <!-- Ambient Radial Glows -->
     <div class="absolute inset-0 pointer-events-none glow-radial-amber opacity-60" aria-hidden="true"></div>
     <div class="absolute inset-0 pointer-events-none glow-radial-gold opacity-50" aria-hidden="true"></div>
@@ -713,7 +713,7 @@
                         <span id="btn-inject-obstacle-text">Inject Path Hazard</span>
                     </button>
 
-                    <button type="button" id="btn-run-sim" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 text-slate-950 text-xs font-mono font-bold transition shadow-lg shadow-amber-500/25 cursor-pointer">
+                    <button type="button" id="btn-run-sim" class="flex-1 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-mono font-bold transition shadow-md cursor-pointer">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         <span>Re-Verify Trajectory</span>
                     </button>
@@ -980,7 +980,7 @@
 </section>
 
 <!-- Interactive Fleet Safety & ROI Impact Calculator -->
-<section id="fleet-roi-calculator" class="py-24 relative overflow-hidden bg-gradient-to-b from-[#09090b] via-slate-950/90 to-[#09090b] border-t border-slate-800/80">
+<section id="fleet-roi-calculator" class="py-24 relative overflow-hidden bg-[#09090b] border-t border-slate-800/80">
     <!-- Ambient Radial Glow -->
     <div class="absolute inset-0 pointer-events-none glow-radial-amber opacity-40" aria-hidden="true"></div>
 
@@ -1065,7 +1065,7 @@
             <!-- Right Results Column -->
             <div class="lg:col-span-6 space-y-6">
                 <!-- Large Highlight Card -->
-                <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-amber-500/40 shadow-2xl bg-gradient-to-br from-slate-900/90 via-slate-950/95 to-slate-900/90 relative overflow-hidden">
+                <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-amber-500/40 shadow-2xl bg-slate-900/90 relative overflow-hidden">
                     <div class="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-amber-500/10 blur-2xl pointer-events-none"></div>
 
                     <span class="text-xs font-mono uppercase tracking-widest text-amber-400 block mb-2">Projected Annual Financial Impact</span>
@@ -1108,7 +1108,7 @@
 
                     <div class="mt-6 pt-5 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
                         <span class="text-xs font-mono text-slate-400">Ready to pilot on your hardware?</span>
-                        <a href="{{ route('contact.create') }}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-mono font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 rounded-lg shadow-md transition">
+                        <a href="{{ route('contact.create') }}" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 text-xs font-mono font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg shadow-sm transition-colors">
                             <span>Request Pilot Simulation &rarr;</span>
                         </a>
                     </div>
@@ -1119,7 +1119,7 @@
 </section>
 
 <!-- Call to Action Banner -->
-<section class="py-20 relative overflow-hidden bg-gradient-to-b from-[#09090b] via-slate-900/90 to-[#09090b] border-t border-slate-800/80">
+<section class="py-20 relative overflow-hidden bg-[#09090b] border-t border-slate-800/80">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
         <span class="text-xs font-mono uppercase tracking-widest text-amber-400">Deploy Plain-Language Control</span>
         <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
@@ -1130,7 +1130,7 @@
         </p>
         <div class="pt-4">
             <a href="{{ route('contact.create') }}" 
-               class="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-300 to-orange-400 hover:from-amber-300 hover:to-orange-400 rounded-xl shadow-xl shadow-amber-500/25 transition-all focus:outline-none focus:ring-2 focus:ring-amber-400">
+               class="inline-flex items-center gap-2 px-8 py-4 text-base font-bold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-xl shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-amber-400">
                 <span>Contact Our Munich Engineering Team</span>
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>

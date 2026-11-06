@@ -56,11 +56,8 @@
                 <!-- Brand Logo -->
                 <div class="flex items-center gap-3">
                     <a href="{{ route('home') }}" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Volant Home">
-                        <div class="relative w-11 h-11 flex items-center justify-center transition duration-300 group-hover:scale-105">
-                            <div class="absolute inset-0 rounded-2xl bg-gradient-to-tr from-[#C8893A] via-[#E5A352] to-[#8C5418] p-[1.5px] shadow-lg shadow-amber-500/20 group-hover:shadow-amber-500/40 transition duration-300">
-                                <div class="w-full h-full bg-[#09090b] rounded-[14px]"></div>
-                            </div>
-                            <img src="{{ asset('images/volant_logo.png') }}" alt="Volant Logo" width="44" height="44" class="relative w-full h-full object-contain p-0.5 rounded-2xl">
+                        <div class="w-11 h-11 rounded-xl bg-slate-900 border border-amber-500/40 p-0.5 shadow-sm group-hover:border-amber-400 transition-colors flex items-center justify-center">
+                            <img src="{{ asset('images/volant_logo.png') }}" alt="Volant Logo" width="44" height="44" class="w-full h-full object-contain rounded-lg">
                         </div>
                         <div class="flex flex-col">
                             <span class="text-2xl font-black tracking-tight text-[#F3EDE1] group-hover:text-amber-300 transition-colors leading-none font-sans">
@@ -98,7 +95,7 @@
                 <!-- Action CTA -->
                 <div class="hidden md:flex items-center gap-3">
                     <a href="{{ route('contact.create') }}" 
-                       class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 rounded-lg shadow-md shadow-amber-500/20 hover:shadow-amber-500/30 transition-all focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-900">
+                       class="inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-900">
                         <span>Get in Touch</span>
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -142,7 +139,7 @@
             </a>
             <div class="pt-2">
                 <a href="{{ route('contact.create') }}" 
-                   class="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-base font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 rounded-lg shadow">
+                   class="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-base font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg shadow-sm transition-colors">
                     <span>Contact Our Team</span>
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -166,8 +163,8 @@
                 <div class="md:col-span-2 space-y-4">
                     <div class="flex items-center gap-4">
                         <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-orange-400 p-[1.5px] overflow-hidden bg-slate-900 shadow-md">
-                                <img src="{{ asset('images/volant_logo.png') }}" alt="Volant Logo" width="40" height="40" class="w-full h-full object-cover rounded-[9px]">
+                            <div class="w-10 h-10 rounded-xl bg-slate-900 border border-amber-500/30 p-0.5 overflow-hidden shadow-sm flex items-center justify-center">
+                                <img src="{{ asset('images/volant_logo.png') }}" alt="Volant Logo" width="40" height="40" class="w-full h-full object-contain rounded-lg">
                             </div>
                             <span class="text-xl font-bold tracking-tight text-white">Volant</span>
                         </div>

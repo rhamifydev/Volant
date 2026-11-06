@@ -86,7 +86,7 @@
         <div class="glass-panel p-8 sm:p-10 rounded-2xl border border-amber-500/30">
             <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                 <div class="md:col-span-4 flex flex-col items-center text-center space-y-3">
-                    <div class="w-32 h-32 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-400 p-[2px] shadow-xl shadow-amber-950/50 overflow-hidden">
+                    <div class="w-32 h-32 rounded-2xl border border-amber-500/40 p-1 bg-slate-900 shadow-md overflow-hidden">
                         <img src="{{ asset('prof.Dr.AhmedEbada.jpg') }}" 
                              alt="Prof. Dr. Ahmed Ebada, Founder of HOPn" 
                              width="128" 
@@ -150,7 +150,7 @@
         <!-- Contact CTA -->
         <div class="text-center pt-8">
             <a href="{{ route('contact.create') }}" 
-               class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-slate-950 bg-gradient-to-r from-amber-400 via-amber-500 to-orange-500 hover:from-amber-300 hover:to-orange-400 rounded-lg shadow-lg shadow-amber-500/20 transition-all">
+               class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-slate-950 bg-amber-500 hover:bg-amber-400 rounded-lg shadow-md transition-all">
                 <span>Connect With Our Team</span>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
