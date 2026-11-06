@@ -8,7 +8,7 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
-    <link rel="alternate icon" href="{{ asset('volant-icon.jpg') }}">
+    <link rel="alternate icon" href="{{ asset('images/volant_logo.jpg') }}">
 
     <!-- Google Fonts: Inter & Lobster -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +40,7 @@
                 <!-- Brand & Breadcrumb -->
                 <div class="flex items-center gap-3">
                     <a href="{{ route('home') }}" class="flex items-center gap-2.5 group">
-                        <img src="{{ asset('volant-icon.jpg') }}" alt="Volant Icon" width="32" height="32" class="w-8 h-8 rounded-lg shadow-sm">
+                        <img src="{{ asset('images/volant_logo.jpg') }}" alt="Volant Logo" width="32" height="32" class="w-8 h-8 rounded-lg shadow-sm object-cover">
                         <span class="text-xl font-bold tracking-tight text-slate-900 group-hover:text-cyan-600 transition-colors">Volant</span>
                     </a>
                     <span class="text-slate-300 font-light">/</span>

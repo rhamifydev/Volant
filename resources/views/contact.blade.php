@@ -51,9 +51,16 @@
             <!-- Left Info Column -->
             <div class="lg:col-span-5 space-y-8">
                 <div>
-                    <span class="text-xs font-mono uppercase tracking-wider text-cyan-400">Headquarters</span>
-                    <h2 class="text-2xl font-bold text-white mt-1">HOPn &bull; Munich</h2>
-                    <p class="text-sm text-slate-300 mt-3 leading-relaxed">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-11 h-11 rounded-xl bg-slate-900 border border-slate-700 p-0.5 overflow-hidden shrink-0 shadow-md">
+                            <img src="{{ asset('images/hopn_ug_logo.jpg') }}" alt="HOPn UG Logo" width="44" height="44" class="w-full h-full object-cover rounded-lg">
+                        </div>
+                        <div>
+                            <span class="text-xs font-mono uppercase tracking-wider text-cyan-400">Headquarters</span>
+                            <h2 class="text-2xl font-bold text-white">HOPn UG &bull; Munich</h2>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-300 mt-2 leading-relaxed">
                         We are based in Munich, Germany, developing the verified safety software layer for next-generation robotics and autonomous flight.
                     </p>
                 </div>

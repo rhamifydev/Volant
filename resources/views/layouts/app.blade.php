@@ -28,9 +28,9 @@
     <meta name="twitter:description" content="@yield('meta_description', 'Tell any robot or drone what to do in plain language. Verified before it moves.')">
 
     <!-- Favicon & Touch Icons -->
-    <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
-    <link rel="alternate icon" href="{{ asset('volant-icon.jpg') }}">
-    <link rel="apple-touch-icon" href="{{ asset('volant-icon.jpg') }}">
+    <link rel="icon" type="image/jpeg" href="{{ asset('images/volant_logo.jpg') }}">
+    <link rel="alternate icon" href="{{ asset('images/volant_logo.jpg') }}">
+    <link rel="apple-touch-icon" href="{{ asset('images/volant_logo.jpg') }}">
 
     <!-- Google Fonts: Lobster -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,12 +56,15 @@
                 <!-- Brand Logo -->
                 <div class="flex items-center gap-3">
                     <a href="{{ route('home') }}" class="flex items-center gap-3.5 group focus:outline-none" aria-label="Volant Home">
-                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1.5px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition duration-300 overflow-hidden">
-                            <img src="{{ asset('volant-icon.jpg') }}" alt="Volant Icon" width="40" height="40" class="w-full h-full object-cover rounded-[10px]">
+                        <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1.5px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition duration-300 overflow-hidden bg-slate-900">
+                            <img src="{{ asset('images/volant_logo.jpg') }}" alt="Volant Logo" width="44" height="44" class="w-full h-full object-cover rounded-[10px]">
                         </div>
-                        <span class="text-2xl font-extrabold tracking-tight text-white group-hover:text-cyan-300 transition-colors">
-                            Volant
-                        </span>
+                        <div class="flex flex-col">
+                            <span class="text-2xl font-extrabold tracking-tight text-white group-hover:text-cyan-300 transition-colors leading-none">
+                                Volant
+                            </span>
+                            <span class="text-[10px] font-mono text-cyan-400 tracking-wider mt-0.5">by HOPn UG</span>
+                        </div>
                     </a>
                 </div>
 
@@ -158,18 +161,30 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
                 <!-- Col 1: Volant / HOPn Munich -->
                 <div class="md:col-span-2 space-y-4">
-                    <div class="flex items-center gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1px] overflow-hidden">
-                            <img src="{{ asset('volant-icon.jpg') }}" alt="Volant Icon" width="36" height="36" class="w-full h-full object-cover rounded-[7px]">
+                    <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-emerald-400 p-[1.5px] overflow-hidden bg-slate-900 shadow-md">
+                                <img src="{{ asset('images/volant_logo.jpg') }}" alt="Volant Logo" width="40" height="40" class="w-full h-full object-cover rounded-[9px]">
+                            </div>
+                            <span class="text-xl font-bold tracking-tight text-white">Volant</span>
                         </div>
-                        <span class="text-xl font-bold tracking-tight text-white">Volant</span>
+                        <span class="text-slate-600 font-mono">|</span>
+                        <div class="flex items-center gap-2.5">
+                            <div class="w-8 h-8 rounded-lg overflow-hidden bg-slate-900 border border-slate-700 p-0.5 shadow-sm">
+                                <img src="{{ asset('images/hopn_ug_logo.jpg') }}" alt="HOPn UG Logo" width="32" height="32" class="w-full h-full object-cover rounded-md">
+                            </div>
+                            <div class="flex flex-col">
+                                <span class="text-xs font-bold text-slate-200">HOPn UG</span>
+                                <span class="text-[10px] font-mono text-cyan-400">Munich, Germany</span>
+                            </div>
+                        </div>
                     </div>
                     <p class="text-sm text-slate-400 max-w-md leading-relaxed">
-                        Volant is a software layer that lets operators tell robots and drones what to do in plain language, with behavior checked for safety before the machine moves.
+                        Volant is a deterministic safety software layer engineered by HOPn UG in Munich. We enable operators to command industrial robots, humanoids, and autonomous drones in plain natural language with mathematical pre-motion guarantees.
                     </p>
                     <div class="flex items-center gap-2 text-xs text-slate-400 font-mono">
                         <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true"></span>
-                        <span>HOPn — Munich, Germany</span>
+                        <span>HOPn UG (haftungsbeschränkt) &bull; Munich, Bavaria</span>
                     </div>
                 </div>
 

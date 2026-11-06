@@ -62,23 +62,21 @@
 
             <div class="md:col-span-5">
                 <div class="glass-panel p-6 rounded-2xl border border-slate-800 space-y-4">
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-xl bg-slate-800 border border-slate-700 flex items-center justify-center text-cyan-400">
-                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-700 p-1 flex items-center justify-center shrink-0 overflow-hidden shadow-lg shadow-cyan-950/40">
+                            <img src="{{ asset('images/hopn_ug_logo.jpg') }}" alt="HOPn UG Official Company Logo" width="48" height="48" class="w-full h-full object-cover rounded-lg">
                         </div>
                         <div>
-                            <span class="text-xs font-mono text-slate-400 uppercase">Headquarters</span>
-                            <h3 class="text-base font-bold text-white">Munich, Germany</h3>
+                            <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider">Company Headquarters</span>
+                            <h3 class="text-base font-bold text-white">HOPn UG &bull; Munich</h3>
                         </div>
                     </div>
                     <p class="text-xs text-slate-300 leading-relaxed">
                         Headquartered in Munich, Bavaria — a recognized global epicenter of precision engineering, industrial robotics, and aerospace technology.
                     </p>
-                    <div class="pt-3 border-t border-slate-800 text-xs font-mono text-slate-400">
-                        Focus: Deterministic safety layers for robotics
+                    <div class="pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono text-slate-400">
+                        <span>Legal: HOPn UG</span>
+                        <span class="text-emerald-400">Munich, Germany</span>
                     </div>
                 </div>
             </div>
